@@ -686,3 +686,71 @@ MEDIA QUERIES
 	}
 
 }
+
+.image-container {
+	position: relative;
+	width: 100%;
+	text-align: center;
+  }
+  
+  .desktop-image {
+	width: 70vw;
+	height: auto;
+	display: block; 
+	margin: 0 auto;
+
+  }
+  
+  .mobile-image {
+	display: none; 
+	width: 100%;
+	height: auto;
+  }
+  
+  @media screen and (max-width: 768px) {
+	.desktop-image {
+	  display: none;
+	}
+	.mobile-image {
+	  display: block;
+	}
+  }
+  
+  .footer-text {
+	text-align: center;
+	padding: 50px; 
+  }
+  
+  .footer-text p {
+	margin: 0;
+	padding: 100px;
+  }
+  
+  .footer-text strong {
+	color: #fff; 
+	font-size: 1rem;
+  }
+  
+  @media (max-width: 768px) {
+	.footer-text strong {
+	  font-size: 0.9rem;
+	  margin-top: -50%;
+	}
+	
+	.footer-text {
+	  padding: 15px 15px 5px;
+	}
+
+	.footer-text p {
+		margin-bottom: -10px;
+	  }
+
+  }
+  .center-align {
+	display: flex;
+	justify-content: center;
+	align-items: center; 
+	flex-direction: column; 
+	padding: 20px; 
+  }
+  
