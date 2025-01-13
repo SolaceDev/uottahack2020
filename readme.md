@@ -49,4 +49,4 @@ aws_access_key_id=<uottahack-access-key-id>
 aws_secret_access_key=<uottahack-secret-access-key>
 ```
 
-3. Run `npm deploy.js`
+3. Run `npm run deploy`
