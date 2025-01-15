@@ -29,8 +29,14 @@ const PastWinners = () => {
   ];
 
   return (
-    <section className="py-24 bg-gradient-to-b from-slate-50 to-white relative">
-      <div className="container mx-auto px-4">
+    <section className="py-24 bg-gradient-to-b from-slate-100 to-emerald-50 relative overflow-hidden">
+      {/* Decorative elements */}
+      <div className="absolute inset-0">
+        <div className="absolute top-0 right-0 w-1/3 h-1/3 bg-gradient-to-br from-emerald-200/30 to-blue-200/30 rounded-full blur-3xl" />
+        <div className="absolute bottom-0 left-0 w-1/3 h-1/3 bg-gradient-to-tr from-emerald-200/30 to-blue-200/30 rounded-full blur-3xl" />
+      </div>
+
+      <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-3xl mx-auto text-center mb-16">
           <h2 className="section-title">Past Winners</h2>
           <p className="text-slate-600 text-lg">
@@ -43,7 +49,7 @@ const PastWinners = () => {
           {winners.map((winner, index) => (
             <div
               key={index}
-              className="group bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-1"
+              className="group bg-white/80 backdrop-blur-sm rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-1"
             >
               <div className="relative aspect-video overflow-hidden">
                 <img

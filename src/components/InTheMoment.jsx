@@ -2,11 +2,11 @@ import React from "react";
 
 const InTheMoment = () => {
   return (
-    <section className="py-24 bg-gradient-to-b from-slate-100 via-white to-slate-100 relative overflow-hidden">
+    <section className="py-24 bg-gradient-to-b from-slate-100 to-emerald-50 relative overflow-hidden">
       {/* Decorative elements */}
       <div className="absolute inset-0">
-        <div className="absolute top-0 -right-20 w-96 h-96 bg-emerald-500/10 rounded-full blur-3xl animate-pulse" />
-        <div className="absolute -bottom-20 -left-20 w-96 h-96 bg-blue-500/10 rounded-full blur-3xl animate-pulse delay-1000" />
+        <div className="absolute top-0 right-0 w-1/3 h-1/3 bg-gradient-to-br from-emerald-200/30 to-blue-200/30 rounded-full blur-3xl" />
+        <div className="absolute bottom-0 left-0 w-1/3 h-1/3 bg-gradient-to-tr from-emerald-200/30 to-blue-200/30 rounded-full blur-3xl" />
       </div>
 
       <div className="container mx-auto px-4 relative z-10">
@@ -45,9 +45,6 @@ const InTheMoment = () => {
           </div>
         </div>
       </div>
-
-      {/* Enhanced bottom gradient */}
-      <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-slate-100 to-transparent" />
     </section>
   );
 };

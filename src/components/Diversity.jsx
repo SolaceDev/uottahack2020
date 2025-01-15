@@ -2,7 +2,7 @@ import React from "react";
 
 const Diversity = () => {
   return (
-    <section className="py-24 bg-gradient-to-b from-emerald-100 to-slate-100 relative">
+    <section className="py-24 bg-gradient-to-b from-slate-100 to-emerald-50 relative">
       {/* Top Wave Decoration */}
       <div className="absolute top-0 left-0 right-0 h-16 bg-gradient-to-b from-slate-100 to-transparent" />
 
@@ -59,7 +59,7 @@ const Diversity = () => {
       </div>
 
       {/* Bottom Wave Decoration */}
-      <div className="absolute bottom-0 left-0 right-0 h-16 bg-gradient-to-t from-slate-100 to-transparent" />
+      <div className="absolute bottom-0 left-0 right-0 h-16 bg-gradient-to-t from-emerald-50 to-transparent" />
     </section>
   );
 };
