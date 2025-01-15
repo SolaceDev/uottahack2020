@@ -1,4 +1,5 @@
 import React from "react";
+import RegistrationForm from "./RegistrationForm";
 
 const Competition = () => {
   return (
@@ -13,15 +14,15 @@ const Competition = () => {
             Compete for $1000 in Prizes!
           </h2>
           <p className="text-slate-600 text-lg leading-relaxed">
-            Solace is hosting a challenge for this year's uOttaHack!
+            Solace is hosting a challenge for this year's uOttaHack!{" "}
             <strong>
-              to qualify for the grand prize, your hack must be comprised of
-              more than one application that communicate through a Solace Event
-              Broker.
-            </strong>
-            Your hack will be assessed on how innovative it is towards solving a
-            real world problem, as well as how appropriately you've leveraged
-            Event-Driven Architecture (EDA) to solve it.
+              To qualify for the prize of $1000 in Amazon Gift Cards, your hack
+              must be comprised of more than one application that communicate
+              through a Solace Event Broker.
+            </strong>{" "}
+            Your hack will be assessed on how creative it is, how innovative it
+            is towards solving a real world problem, and whether it
+            appropriately leveraged Event-Driven Architecture (EDA) to solve it.
           </p>
         </div>
 
@@ -49,7 +50,8 @@ const Competition = () => {
               How to Register
             </h3>
             <div className="space-y-4 text-slate-600 text-lg">
-              Use <strong>your school's email</strong> to
+              One of your hackathon team members must use their{" "}
+              <strong>university email</strong> to
               <a href="https://docs.solace.com/Cloud/ggs_login.htm">
                 {" "}
                 sign up for a free Solace Cloud account
@@ -59,13 +61,8 @@ const Competition = () => {
                 {" "}
                 create your first Solace PubSub+ Event Broker
               </a>
-              . Once that's done, either come see someone from the Solace team
-              at our booth, or reach out to us on Discord.
-              <strong>
-                {" "}
-                We'll need your team name and the email you used to signup to
-                Solace Cloud to get you registered!
-              </strong>
+              . Once that's done, fill out the registration form below.
+              <RegistrationForm />
             </div>
           </div>
         </div>
