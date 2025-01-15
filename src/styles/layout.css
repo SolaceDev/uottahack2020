@@ -31,7 +31,7 @@
 }
 
 section {
-  @apply mb-32 overflow-visible relative;
+  @apply overflow-visible relative;
 }
 
 main {
