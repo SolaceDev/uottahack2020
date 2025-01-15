@@ -157,27 +157,27 @@ const Header = () => {
                   {item.label}
                 </Link>
               ))}
-              <Link
-                to="challenge"
-                spy={true}
-                smooth={true}
-                offset={-70}
-                duration={500}
-                className="block w-full py-3 text-center rounded-lg bg-gradient-to-r from-emerald-500 to-blue-500 text-white font-medium 
-                hover:shadow-lg hover:shadow-emerald-500/25 transition-all duration-300 cursor-pointer"
-                onClick={() => setIsMobileMenuOpen(false)}
-              >
-                Join Us
-              </Link>
+              <div className="pt-4 flex flex-col gap-4">
+                <a
+                  href="https://solace.com/careers/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block w-full py-3 text-center rounded-lg bg-gradient-to-r from-emerald-500 to-blue-500 text-white font-medium 
+                  hover:shadow-lg hover:shadow-emerald-500/25 transition-all duration-300"
+                  onClick={() => setIsMobileMenuOpen(false)}
+                >
+                  Join Solace
+                </a>
+              </div>
             </div>
           </div>
         </div>
       </nav>
 
       <div className="container mx-auto px-4 pt-40 pb-20">
-        <div className="grid lg:grid-cols-2 gap-16 items-center">
+        <div className="grid lg:grid-cols-2 gap-16 items-center relative">
           {/* Content section - make it take up more space */}
-          <div className="lg:col-span-1 xl:pr-12 space-y-8 animate-fade-in">
+          <div className="lg:col-span-1 xl:pr-12 space-y-8 animate-fade-in relative z-20">
             <div className="flex items-center gap-4 mb-6">
               <span className="px-4 py-1 rounded-full bg-emerald-500/10 text-emerald-400 text-sm font-medium">
                 Win $1000 in Amazon Gift Cards
@@ -206,9 +206,8 @@ const Header = () => {
                 smooth={true}
                 offset={-70}
                 duration={500}
-                className="px-8 py-3 rounded-lg bg-gradient-to-r from-emerald-500 to-blue-500 text-white font-medium 
-                hover:shadow-lg hover:shadow-emerald-500/25 transform hover:-translate-y-0.5 transition-all duration-300
-                cursor-pointer"
+                className="px-8 py-3 rounded-lg bg-gradient-to-r from-emerald-500 to-blue-500 text-white font-medium hover:shadow-lg hover:shadow-emerald-500/25 transform hover:-translate-y-0.5 transition-all duration-300 cursor-pointer"
+                onClick={() => setIsMobileMenuOpen(false)} // Add this if you want to close mobile menu on click
               >
                 Join the Challenge
               </Link>
@@ -218,16 +217,15 @@ const Header = () => {
                 smooth={true}
                 offset={-70}
                 duration={500}
-                className="px-8 py-3 rounded-lg border border-white/20 text-white font-medium 
-                hover:bg-white/10 transition-all duration-300 cursor-pointer"
+                className="px-8 py-3 rounded-lg border border-white/20 text-white font-medium hover:bg-white/10 transition-all duration-300 cursor-pointer"
+                onClick={() => setIsMobileMenuOpen(false)} // Add this if you want to close mobile menu on click
               >
                 View Examples
               </Link>
             </div>
           </div>
-
           {/* Solly container - adjusted positioning */}
-          <div className="relative lg:col-span-1 lg:translate-x-24 xl:translate-x-32 2xl:translate-x-40">
+          <div className="relative lg:col-span-1 lg:translate-x-24 xl:translate-x-32 2xl:translate-x-40 z-10">
             {/* Pure Solly with adjusted positioning */}
             <div className="animate-smooth-float transform lg:translate-x-8">
               <img
