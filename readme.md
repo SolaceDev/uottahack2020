@@ -40,7 +40,7 @@ The build artifacts will be stored in the `dist/` directory.
 
 :warning: **This will deploy the target code to https://uottahack.solace.cloud/. Please test your work thoroughly beforehand.**
 
-1. Open a PE request to activate the `uottahack` AWS IAM user in production (if it's dormant), and to share its access key credentials with you (e.g. https://sol-jira.atlassian.net/browse/DATAGO-72229)
+1. Open a PE request to activate (if it's dormant) or create the AWS IAM user in production. Have them share its credentials with you (e.g. [https://sol-jira.atlassian.net/browse/DATAGO-72229](https://sol-jira.atlassian.net/browse/DATAGO-92450))
 2. Create a new AWS profile under `~/.aws/credentials` and name it `[uottahack]`. Add the credentials from the previous step to it
 
 ```
