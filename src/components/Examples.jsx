@@ -47,22 +47,79 @@ const Examples = () => {
   return (
     <section className="py-32 bg-slate-900 relative overflow-hidden">
       {/* Enhanced decorative elements */}
-      <div className="absolute top-0 right-0 w-1/2 h-1/2 bg-gradient-to-br from-emerald-500/20 to-blue-500/20 rounded-full blur-3xl transform -translate-y-1/4" />
-      <div className="absolute bottom-0 left-0 w-1/2 h-1/2 bg-gradient-to-tr from-emerald-500/20 to-blue-500/20 rounded-full blur-3xl transform translate-y-1/4" />
+      <div className="absolute top-0 right-0 w-1/2 h-1/2 bg-gradient-to-br from-emerald-500/10 to-blue-500/10 rounded-full blur-3xl transform -translate-y-1/4" />
+      <div className="absolute bottom-0 left-0 w-1/2 h-1/2 bg-gradient-to-tr from-emerald-500/10 to-blue-500/10 rounded-full blur-3xl transform translate-y-1/4" />
 
       <div className="container mx-auto px-4 relative">
         <div className="max-w-4xl mx-auto text-center mb-20">
-          <div className="mb-12 px-4">
-            <h2 className="text-5xl md:text-6xl font-bold leading-[1.2] tracking-normal [text-wrap:balance] bg-gradient-to-r from-emerald-400 to-blue-400 bg-clip-text text-transparent pb-2">
-              Start Building Today
-            </h2>
-          </div>
-          <p className="text-slate-400 text-lg md:text-xl leading-relaxed max-w-3xl mx-auto">
-            Jump start your project with our ready-to-use examples and tutorials
+          <span className="px-4 py-2 rounded-full bg-emerald-500/10 text-emerald-400 text-sm font-medium mb-4 inline-block">
+            Ready-to-Use Examples
+          </span>
+          <h2 className="text-5xl md:text-6xl font-bold leading-[1.2] tracking-normal [text-wrap:balance] bg-gradient-to-r from-emerald-400 to-blue-400 bg-clip-text text-transparent pb-2">
+            Start Building Now
+          </h2>
+          <p className="text-slate-400 text-lg md:text-xl leading-relaxed max-w-3xl mx-auto mt-6">
+            Jump-start your project with our curated examples. Each example
+            includes full source code and step-by-step instructions.
           </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-12">
+          {/* Quick Start Guide - Updated */}
+          <div className="lg:col-span-3 mb-12">
+            <a
+              href="https://tutorials.solace.dev/get-started"
+              className="group relative block bg-gradient-to-r from-slate-800 to-slate-900 rounded-2xl p-8 shadow-lg hover:shadow-2xl border border-slate-700/50 backdrop-blur-sm transform hover:-translate-y-1 transition-all duration-500 overflow-hidden"
+            >
+              <div className="absolute inset-0 bg-gradient-to-r from-emerald-500/10 to-blue-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+              <div className="relative z-10">
+                <div className="flex items-center gap-3 mb-4">
+                  <svg
+                    className="w-6 h-6 text-emerald-400"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M13 10V3L4 14h7v7l9-11h-7z"
+                    />
+                  </svg>
+                  <span className="text-emerald-400 text-sm font-semibold tracking-wider uppercase">
+                    Recommended Path
+                  </span>
+                </div>
+                <h3 className="text-3xl font-bold text-slate-200 mb-4">
+                  Quick Start Guide
+                </h3>
+                <p className="text-slate-400 text-lg mb-6">
+                  Complete beginner? Start here! This 15-minute guide will teach
+                  you the basics of event-driven architecture and get your first
+                  application running.
+                </p>
+                <div className="flex items-center text-emerald-400 font-medium">
+                  <span>Start Learning</span>
+                  <svg
+                    className="w-5 h-5 ml-2"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M17 8l4 4m0 0l-4 4m4-4H3"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          {/* Existing example cards */}
           {examples.map((example, index) => (
             <a
               key={index}

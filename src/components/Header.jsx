@@ -47,10 +47,9 @@ const Header = () => {
   };
 
   const navItems = [
-    { href: "#about", label: "About" },
-    { href: "#prizes", label: "Prizes" },
-    { href: "#schedule", label: "Schedule" },
-    { href: "#team", label: "Team" },
+    { href: "#competition", label: "Challenge" },
+    { href: "#examples", label: "Examples" },
+    { href: "#help", label: "Get Help" },
   ];
 
   return (
@@ -83,7 +82,7 @@ const Header = () => {
                   isScrolled ? "opacity-100 translate-x-0" : ""
                 }`}
               >
-                uOttaHack
+                uOttaHack 7
               </span>
             </a>
 
@@ -111,12 +110,12 @@ const Header = () => {
               ))}
               <div className="h-6 w-px bg-slate-700" />
               <a
-                href="#apply"
+                href="#competition"
                 className="px-6 py-2.5 rounded-lg bg-gradient-to-r from-emerald-500 to-blue-500 text-white font-medium text-sm 
                 hover:shadow-lg hover:shadow-emerald-500/25 transform hover:-translate-y-0.5 transition-all duration-300
                 relative overflow-hidden group"
               >
-                <span className="relative z-10">Join Us</span>
+                <span className="relative z-10">Join Challenge</span>
                 <div className="absolute inset-0 bg-gradient-to-r from-blue-500 to-emerald-500 transition-transform duration-300 translate-y-full group-hover:translate-y-0" />
               </a>
             </div>
@@ -180,7 +179,7 @@ const Header = () => {
                 </a>
               ))}
               <a
-                href="#apply"
+                href="#competition"
                 className="block w-full py-3 text-center rounded-lg bg-gradient-to-r from-emerald-500 to-blue-500 text-white font-medium 
                 hover:shadow-lg hover:shadow-emerald-500/25 transition-all duration-300"
                 onClick={() => setIsMobileMenuOpen(false)}
@@ -194,48 +193,59 @@ const Header = () => {
 
       <div className="container mx-auto px-4 pt-40 pb-20">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
-          <div className="space-y-8 animate-fade-in">
-            <h1 className="text-6xl lg:text-7xl font-bold">
-              <span className="bg-gradient-to-r from-emerald-400 via-teal-400 to-blue-500 bg-clip-text text-transparent">
-                Shape the Future
+          {/* Content section - make it take up more space */}
+          <div className="lg:col-span-1 xl:pr-12 space-y-8 animate-fade-in">
+            <div className="flex items-center gap-4 mb-6">
+              <span className="px-4 py-1 rounded-full bg-emerald-500/10 text-emerald-400 text-sm font-medium">
+                Win $1000 in Amazon Gift Cards
               </span>
+              <div className="h-2 w-2 rounded-full bg-emerald-400 animate-pulse"></div>
+            </div>
+
+            <h1 className="text-5xl lg:text-6xl font-bold leading-tight">
+              <span className="text-white">Build Real-Time</span>
               <br />
-              <span className="text-white">of Event-Driven Architecture</span>
+              <span className="bg-gradient-to-r from-emerald-400 via-teal-400 to-blue-500 bg-clip-text text-transparent">
+                Event-Driven Apps
+              </span>
             </h1>
-            <p className="text-white/90 text-xl mb-8">
-              Join Solace at uOttaHack 6 and build the next generation of
-              real-time applications. Transform your ideas into reality with our
-              cutting-edge event broker technology.
+
+            <p className="text-white/90 text-xl leading-relaxed">
+              Join the Solace Challenge at uOttaHack 7. Create real-time
+              event-driven applications, learn modern architecture patterns, and
+              compete for $1000 in prizes!
             </p>
+
+            <div className="flex gap-4 pt-4">
+              <a
+                href="#competition"
+                className="px-8 py-3 rounded-lg bg-gradient-to-r from-emerald-500 to-blue-500 text-white font-medium 
+                hover:shadow-lg hover:shadow-emerald-500/25 transform hover:-translate-y-0.5 transition-all duration-300"
+              >
+                Join the Challenge
+              </a>
+              <a
+                href="#examples"
+                className="px-8 py-3 rounded-lg border border-white/20 text-white font-medium 
+                hover:bg-white/10 transition-all duration-300"
+              >
+                View Examples
+              </a>
+            </div>
           </div>
 
-          {/* Ultra minimal Solly container */}
-          <div className="relative">
-            {/* Minimal particles */}
-            {[...Array(6)].map((_, i) => (
-              <div
-                key={i}
-                className="absolute animate-floating-particle"
-                style={{
-                  left: `${Math.random() * 100}%`,
-                  top: `${Math.random() * 100}%`,
-                  animationDelay: `${i * 0.7}s`,
-                }}
-              >
-                <div className="w-0.5 h-0.5 bg-emerald-400/20 rounded-full animate-pulse-fade" />
-              </div>
-            ))}
-
-            {/* Pure Solly */}
-            <div className="animate-smooth-float">
+          {/* Solly container - adjusted positioning */}
+          <div className="relative lg:col-span-1 lg:translate-x-24 xl:translate-x-32 2xl:translate-x-40">
+            {/* Pure Solly with adjusted positioning */}
+            <div className="animate-smooth-float transform lg:translate-x-8">
               <img
                 src="/assets/images/solly2.png"
                 alt="Solly the mascot"
                 className="relative drop-shadow-[0_0_15px_rgba(16,185,129,0.15)]"
               />
 
-              {/* Minimal glow */}
-              <div className="absolute inset-0 -z-10">
+              {/* Minimal glow - expanded */}
+              <div className="absolute inset-0 -z-10 scale-150">
                 <div className="absolute inset-0 bg-gradient-radial from-emerald-500/5 to-transparent blur-xl opacity-20" />
               </div>
             </div>

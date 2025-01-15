@@ -9,77 +9,102 @@ const Competition = () => {
 
       <div className="container mx-auto px-4 relative">
         <div className="max-w-4xl mx-auto text-center mb-20">
-          <div className="mb-12 px-4">
-            <h2 className="text-5xl md:text-6xl font-bold leading-[1.2] tracking-normal [text-wrap:balance] bg-gradient-to-r from-emerald-600 to-blue-600 bg-clip-text text-transparent pb-2">
-              Compete for $1000 in Prizes!
-            </h2>
-          </div>
-          <p className="text-slate-600 text-lg md:text-xl leading-relaxed max-w-3xl mx-auto">
-            Solace is hosting a challenge for this year's uOttaHack!{" "}
-            <span className="font-semibold block mt-2">
-              To qualify for the grand prize, your hack must be comprised of
-              more than one application that communicate through a Solace Event
-              Broker.
-            </span>
-          </p>
-          <p className="text-slate-600 text-lg md:text-xl leading-relaxed mt-4">
-            Your hack will be assessed on how innovative it is towards solving a
-            real world problem, as well as how appropriately you've leveraged
-            Event-Driven Architecture (EDA) to solve it.
+          <span className="px-4 py-2 rounded-full bg-emerald-500/10 text-emerald-600 text-sm font-medium mb-4 inline-block">
+            $1000 in Amazon Gift Cards
+          </span>
+          <h2 className="text-5xl md:text-6xl font-bold leading-[1.2] tracking-normal [text-wrap:balance] bg-gradient-to-r from-emerald-600 to-blue-600 bg-clip-text text-transparent pb-2">
+            Join the Challenge
+          </h2>
+          <p className="text-slate-600 text-lg md:text-xl leading-relaxed max-w-3xl mx-auto mt-6">
+            Build innovative event-driven solutions and compete for amazing
+            prizes
           </p>
         </div>
 
         <div className="grid md:grid-cols-2 gap-8 lg:gap-12 items-start">
-          {/* Prize Card */}
-          <div className="group p-8 bg-white/80 backdrop-blur-sm rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-1">
-            <div className="text-right mb-8">
-              <h3 className="text-7xl font-bold bg-gradient-to-r from-emerald-600 to-blue-600 bg-clip-text text-transparent mb-2">
-                $1000
-              </h3>
-              <p className="text-slate-600 text-2xl">
-                worth of <strong>Amazon Gift Cards</strong>
-              </p>
-            </div>
-            <div className="relative overflow-hidden rounded-xl">
-              <img
-                className="w-full transform group-hover:scale-105 transition-transform duration-500"
-                src="/assets/images/amazon.png"
-                alt="Amazon Gift Cards"
-              />
+          {/* Steps Card */}
+          <div className="group p-8 bg-white/80 backdrop-blur-sm rounded-2xl shadow-lg">
+            <h3 className="text-3xl font-bold text-slate-800 mb-6">
+              How to Join
+            </h3>
+            <div className="space-y-6 text-slate-600">
+              <div className="flex items-start gap-4">
+                <div className="flex-shrink-0 w-8 h-8 rounded-full bg-emerald-100 flex items-center justify-center text-emerald-600 font-bold">
+                  1
+                </div>
+                <div>
+                  <h4 className="font-semibold mb-2">Create Solace Account</h4>
+                  <p>
+                    Sign up for a free Solace Cloud account using your school
+                    email
+                  </p>
+                  <a
+                    href="https://console.solace.cloud/login/sign-up"
+                    className="text-emerald-600 hover:text-emerald-700 underline mt-2 inline-block"
+                  >
+                    Create Account →
+                  </a>
+                </div>
+              </div>
+
+              <div className="flex items-start gap-4">
+                <div className="flex-shrink-0 w-8 h-8 rounded-full bg-emerald-100 flex items-center justify-center text-emerald-600 font-bold">
+                  2
+                </div>
+                <div>
+                  <h4 className="font-semibold mb-2">Register Your Team</h4>
+                  <p>
+                    Submit your team details and Solace account email through
+                    our registration form
+                  </p>
+                  <a
+                    href="[MICROSOFT_FORM_URL]"
+                    className="text-emerald-600 hover:text-emerald-700 underline mt-2 inline-block"
+                  >
+                    Register Team →
+                  </a>
+                </div>
+              </div>
+
+              <div className="flex items-start gap-4">
+                <div className="flex-shrink-0 w-8 h-8 rounded-full bg-emerald-100 flex items-center justify-center text-emerald-600 font-bold">
+                  3
+                </div>
+                <div>
+                  <h4 className="font-semibold mb-2">Start Building</h4>
+                  <p>
+                    Check out our resources and examples to kickstart your
+                    project
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
 
-          {/* Registration Card */}
-          <div className="space-y-6 p-8 bg-white/60 backdrop-blur-sm rounded-2xl shadow-lg">
+          {/* Requirements Card */}
+          <div className="group p-8 bg-white/80 backdrop-blur-sm rounded-2xl shadow-lg">
             <h3 className="text-3xl font-bold text-slate-800 mb-6">
-              How to Register
+              Challenge Requirements
             </h3>
-            <div className="space-y-4 text-slate-600 text-lg">
-              <p>
-                Use <strong>your school's email</strong> to{" "}
-                <a
-                  href="https://docs.solace.com/Cloud/ggs_login.htm"
-                  className="text-emerald-600 hover:text-emerald-700 underline transition-colors"
-                >
-                  sign up for a free Solace Cloud account
-                </a>
-                , then{" "}
-                <a
-                  href="https://docs.solace.com/Cloud/ggs_create_first_service.htm"
-                  className="text-emerald-600 hover:text-emerald-700 underline transition-colors"
-                >
-                  create your first Solace PubSub+ Event Broker
-                </a>
-                .
-              </p>
-              <p>
-                Once that's done, either come see someone from the Solace team
-                at our booth, or reach out to us on Discord.
-              </p>
-              <p className="font-semibold">
-                We'll need your team name and the email you used to signup to
-                Solace Cloud to get you registered!
-              </p>
+            <div className="space-y-6 text-slate-600">
+              <div className="space-y-4">
+                <p className="font-semibold">Your solution must include:</p>
+                <ul className="list-disc pl-6 space-y-3">
+                  <li>Multiple applications communicating with each other</li>
+                  <li>Integration with Solace PubSub+ Event Broker</li>
+                  <li>Solution to a real-world problem</li>
+                  <li>Effective use of Event-Driven Architecture</li>
+                </ul>
+              </div>
+
+              <div className="bg-emerald-50 p-4 rounded-lg">
+                <h4 className="font-semibold text-emerald-800 mb-2">
+                  Need Help?
+                </h4>
+                <p className="text-emerald-700">
+                  Visit our booth or reach out on Discord for assistance!
+                </p>
+              </div>
             </div>
           </div>
         </div>
