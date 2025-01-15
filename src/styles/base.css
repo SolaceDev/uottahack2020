@@ -1,0 +1,59 @@
+:root {
+  --primary-color: #00c895;
+  --primary-light: #7decc9;
+  --accent-color: #F37021;
+  --dark-blue: #20262b;
+  --text-color: #2d3436;
+  --spacing-base: clamp(1rem, 2vw, 1.5rem);
+  --transition-default: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  --shadow-default: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+  --border-radius: 1rem;
+  --backdrop-blur: 8px;
+  --max-width-content: 1440px;
+  --grid-gap: clamp(1rem, 3vw, 2rem);
+  --section-spacing: clamp(3rem, 8vw, 6rem);
+}
+
+/* Base styles */
+body {
+  @apply min-h-screen flex flex-col font-sans text-[var(--text-color)] m-0;
+  font-family: 'Inter', 'Open Sans', sans-serif;
+  letter-spacing: -0.011em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Improve scroll behavior */
+html {
+  scroll-behavior: smooth;
+  @apply selection:bg-[var(--primary-color)] selection:text-white;
+}
+
+/* Enhanced focus styles */
+:focus-visible {
+  @apply outline-2 outline-[var(--primary-color)] outline-offset-2 rounded;
+}
+
+/* Typography */
+h1 {
+  @apply font-bold text-6xl tracking-tight text-black/90;
+  font-size: clamp(2.5rem, 5vw, 4rem);
+}
+
+h2 {
+  @apply font-bold text-3xl tracking-tight text-black/90;
+  font-size: clamp(1.5rem, 3vw, 2rem);
+}
+
+p {
+  @apply leading-relaxed text-lg text-black/75;
+  font-size: clamp(1rem, 1.5vw, 1.25rem);
+}
+
+a {
+  @apply text-[var(--accent-color)] font-bold;
+}
+
+.App {
+  @apply flex flex-col min-h-screen;
+}

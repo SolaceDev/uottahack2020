@@ -1,0 +1,24 @@
+@import 'base.css';
+@import 'utilities.css';
+@import 'components.css';
+@import 'header.css';
+@import 'footer.css';
+@import 'layout.css';
+@import 'decorations.css';
+@import 'media-queries.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .filter-monochrome {
+    @apply grayscale;
+  }
+}
+
+@layer utilities {
+  .text-size-small {
+    font-size: 0.75em;
+  }
+}

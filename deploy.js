@@ -16,7 +16,8 @@ var files = [];
 console.log(`deploying console to uottahack.solace.cloud`);
 process.stdout.write("uploading files...");
 
-basePath = process.cwd() + "/dist/";
+// Change basePath to use CRA build directory
+basePath = process.cwd() + "/build/";
 files = getAllFiles(basePath);
 
 uploadSomeFiles().catch((error) => {

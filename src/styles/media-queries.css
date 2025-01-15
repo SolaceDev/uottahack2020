@@ -1,0 +1,61 @@
+@media screen and (max-width: 768px) {
+  .desktop-image { @apply hidden; }
+  .mobile-image { @apply block; }
+
+  .footer-text {
+    @apply py-[15px] px-[15px] pb-[5px];
+    strong { @apply text-sm -mt-[50%]; }
+    p { @apply -mb-[10px]; }
+  }
+
+  #competition .cards {
+    @apply flex-col items-center;
+    > div:first-child { @apply mb-5; }
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  body p {
+    @apply text-xl;
+  }
+
+  .header-slant {
+    @apply h-[1450px] -top-[50px];
+  }
+
+  .outline-main {
+    @apply text-[5.75em] -my-[30px] top-[280px] font-extrabold;
+    stroke-width: 5;
+  }
+
+  header nav {
+    @apply w-full absolute top-0;
+    .links {
+      @apply flex justify-between w-[30%] float-right mx-8;
+    }
+  }
+
+  .prize {
+    @apply flex-row justify-around;
+  }
+
+  .competition-text {
+    @apply flex justify-between;
+    div {
+      @apply w-[45%];
+    }
+  }
+
+  #examples {
+    @apply py-6;
+    .example-group .example {
+      @apply w-[45%];
+    }
+  }
+
+  .team-images img {
+    @apply w-[250px];
+  }
+}
+
+/* Remove 1400px media query and use clamp() instead */

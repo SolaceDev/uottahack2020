@@ -1,0 +1,30 @@
+/* Footer styles */
+footer {
+  @apply mt-auto bg-[var(--primary-color)] text-white;
+  position: relative;
+  height: auto;
+  min-height: 175px;
+}
+
+.footer-content {
+  @apply container mx-auto px-4 py-8;
+}
+
+/* Remove absolute positioning from footer */
+footer {
+  position: relative;
+  bottom: auto;
+}
+
+/* Footer text styles */
+.footer-text {
+  @apply text-center p-[50px];
+}
+
+.footer-text p {
+  @apply m-0 p-[100px];
+}
+
+.footer-text strong {
+  @apply text-white text-base;
+}
