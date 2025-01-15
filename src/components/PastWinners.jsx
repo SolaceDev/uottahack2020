@@ -29,7 +29,10 @@ const PastWinners = () => {
   ];
 
   return (
-    <section className="py-32 bg-gradient-to-b from-slate-100 to-emerald-50 relative overflow-hidden">
+    <section
+      id="winners"
+      className="py-32 bg-gradient-to-b from-slate-100 to-emerald-50 relative overflow-hidden"
+    >
       {/* Enhanced decorative elements */}
       <div className="absolute top-0 right-0 w-1/2 h-1/2 bg-gradient-to-br from-emerald-200/30 to-blue-200/30 rounded-full blur-3xl transform -translate-y-1/4" />
       <div className="absolute bottom-0 left-0 w-1/2 h-1/2 bg-gradient-to-tr from-emerald-200/30 to-blue-200/30 rounded-full blur-3xl transform translate-y-1/4" />

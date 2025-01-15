@@ -1,15 +1,14 @@
 import React, { useEffect, useState } from "react";
+import { Link } from "react-scroll";
 import "../styles/header.css";
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [scrollProgress, setScrollProgress] = useState(0);
-  const [activeSection, setActiveSection] = useState("");
 
   useEffect(() => {
     const handleScroll = () => {
-      // Handle scroll state
       setIsScrolled(window.scrollY > 50);
 
       // Calculate scroll progress
@@ -20,36 +19,17 @@ const Header = () => {
         document.documentElement.clientHeight;
       const scrolled = (winScroll / height) * 100;
       setScrollProgress(scrolled);
-
-      // Determine active section
-      const sections = navItems.map((item) => item.href.substring(1));
-      const current = sections.find((section) => {
-        const element = document.getElementById(section);
-        if (element) {
-          const rect = element.getBoundingClientRect();
-          return rect.top <= 100 && rect.bottom >= 100;
-        }
-        return false;
-      });
-      setActiveSection(current || "");
     };
 
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const scrollToNextSection = () => {
-    const viewportHeight = window.innerHeight;
-    window.scrollTo({
-      top: viewportHeight,
-      behavior: "smooth",
-    });
-  };
-
   const navItems = [
-    { href: "#competition", label: "Challenge" },
-    { href: "#examples", label: "Examples" },
-    { href: "#help", label: "Get Help" },
+    { to: "challenge", label: "Challenge" },
+    { to: "examples", label: "Examples" },
+    { to: "team", label: "Team" },
+    { to: "winners", label: "Past Winners" },
   ];
 
   return (
@@ -89,38 +69,35 @@ const Header = () => {
             {/* Desktop Navigation */}
             <div className="hidden md:flex items-center gap-8">
               {navItems.map((item) => (
-                <a
-                  key={item.href}
-                  href={item.href}
-                  className={`text-white/80 hover:text-white text-sm font-medium relative group transition-all duration-300 ${
-                    activeSection === item.href.substring(1)
-                      ? "text-emerald-400"
-                      : ""
-                  }`}
+                <Link
+                  key={item.to}
+                  to={item.to}
+                  spy={true}
+                  smooth={true}
+                  offset={-70}
+                  duration={500}
+                  activeClass="text-emerald-400"
+                  className="text-white/80 hover:text-white text-sm font-medium relative group transition-all duration-300 cursor-pointer"
                 >
                   {item.label}
-                  <span
-                    className={`absolute -bottom-1 left-0 h-0.5 bg-emerald-400 transition-all duration-300 ${
-                      activeSection === item.href.substring(1)
-                        ? "w-full"
-                        : "w-0 group-hover:w-full"
-                    }`}
-                  />
-                </a>
+                  <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-emerald-400 transition-all duration-300 group-hover:w-full" />
+                </Link>
               ))}
               <div className="h-6 w-px bg-slate-700" />
               <a
-                href="#competition"
+                href="https://solace.com/careers/"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="px-6 py-2.5 rounded-lg bg-gradient-to-r from-emerald-500 to-blue-500 text-white font-medium text-sm 
                 hover:shadow-lg hover:shadow-emerald-500/25 transform hover:-translate-y-0.5 transition-all duration-300
                 relative overflow-hidden group"
               >
-                <span className="relative z-10">Join Challenge</span>
+                <span className="relative z-10">Join Solace</span>
                 <div className="absolute inset-0 bg-gradient-to-r from-blue-500 to-emerald-500 transition-transform duration-300 translate-y-full group-hover:translate-y-0" />
               </a>
             </div>
 
-            {/* Mobile Menu Button with improved animation */}
+            {/* Mobile Menu Button */}
             <button
               className="md:hidden p-2 rounded-lg hover:bg-slate-800/50 transition-colors"
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
@@ -162,30 +139,36 @@ const Header = () => {
           <div className="bg-slate-900/95 backdrop-blur-lg border-t border-slate-800 shadow-lg">
             <div className="container mx-auto px-4 py-6 space-y-4">
               {navItems.map((item, index) => (
-                <a
-                  key={item.href}
-                  href={item.href}
-                  className={`block py-3 px-4 rounded-lg text-white/80 hover:text-white font-medium transition-all duration-300 ${
-                    activeSection === item.href.substring(1)
-                      ? "bg-slate-800 text-emerald-400"
-                      : "hover:bg-slate-800/50"
-                  }`}
+                <Link
+                  key={item.to}
+                  to={item.to}
+                  spy={true}
+                  smooth={true}
+                  offset={-70}
+                  duration={500}
+                  className={`block py-3 px-4 rounded-lg text-white/80 hover:text-white font-medium transition-all duration-300 
+                    cursor-pointer hover:bg-slate-800/50`}
+                  activeClass="bg-slate-800 text-emerald-400"
                   onClick={() => setIsMobileMenuOpen(false)}
                   style={{
                     transitionDelay: `${index * 50}ms`,
                   }}
                 >
                   {item.label}
-                </a>
+                </Link>
               ))}
-              <a
-                href="#competition"
+              <Link
+                to="challenge"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500}
                 className="block w-full py-3 text-center rounded-lg bg-gradient-to-r from-emerald-500 to-blue-500 text-white font-medium 
-                hover:shadow-lg hover:shadow-emerald-500/25 transition-all duration-300"
+                hover:shadow-lg hover:shadow-emerald-500/25 transition-all duration-300 cursor-pointer"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 Join Us
-              </a>
+              </Link>
             </div>
           </div>
         </div>
@@ -217,20 +200,29 @@ const Header = () => {
             </p>
 
             <div className="flex gap-4 pt-4">
-              <a
-                href="#competition"
+              <Link
+                to="challenge"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500}
                 className="px-8 py-3 rounded-lg bg-gradient-to-r from-emerald-500 to-blue-500 text-white font-medium 
-                hover:shadow-lg hover:shadow-emerald-500/25 transform hover:-translate-y-0.5 transition-all duration-300"
+                hover:shadow-lg hover:shadow-emerald-500/25 transform hover:-translate-y-0.5 transition-all duration-300
+                cursor-pointer"
               >
                 Join the Challenge
-              </a>
-              <a
-                href="#examples"
+              </Link>
+              <Link
+                to="examples"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500}
                 className="px-8 py-3 rounded-lg border border-white/20 text-white font-medium 
-                hover:bg-white/10 transition-all duration-300"
+                hover:bg-white/10 transition-all duration-300 cursor-pointer"
               >
                 View Examples
-              </a>
+              </Link>
             </div>
           </div>
 
@@ -255,8 +247,12 @@ const Header = () => {
 
       {/* Enhanced scroll indicator */}
       <div className="absolute bottom-12 left-1/2 transform -translate-x-1/2">
-        <div
-          onClick={scrollToNextSection}
+        <Link
+          to="challenge"
+          spy={true}
+          smooth={true}
+          offset={-70}
+          duration={500}
           className="flex flex-col items-center gap-3 text-white/50 hover:text-white/90 transition-all cursor-pointer group"
         >
           <span className="text-sm font-medium tracking-wider uppercase group-hover:transform group-hover:-translate-y-1 transition-all duration-300">
@@ -270,7 +266,7 @@ const Header = () => {
             <div className="w-1 h-1 bg-current rounded-full mx-auto group-hover:scale-125 transition-all delay-75" />
             <div className="w-1 h-1 bg-current rounded-full mx-auto group-hover:scale-110 transition-all delay-100" />
           </div>
-        </div>
+        </Link>
       </div>
 
       <div className="absolute bottom-0 left-0 w-full overflow-hidden wave-container">

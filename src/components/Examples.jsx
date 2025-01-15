@@ -45,7 +45,10 @@ const Examples = () => {
   ];
 
   return (
-    <section className="py-32 bg-slate-900 relative overflow-hidden">
+    <section
+      id="examples"
+      className="py-32 bg-slate-900 relative overflow-hidden"
+    >
       {/* Enhanced decorative elements */}
       <div className="absolute top-0 right-0 w-1/2 h-1/2 bg-gradient-to-br from-emerald-500/10 to-blue-500/10 rounded-full blur-3xl transform -translate-y-1/4" />
       <div className="absolute bottom-0 left-0 w-1/2 h-1/2 bg-gradient-to-tr from-emerald-500/10 to-blue-500/10 rounded-full blur-3xl transform translate-y-1/4" />
@@ -97,7 +100,8 @@ const Examples = () => {
                 <p className="text-slate-400 text-lg mb-6">
                   Complete beginner? Start here! This guide will teach you the
                   basics of event-driven architecture and get your first
-                  application running.
+                  application running. Don't miss our workshop with Dishant
+                  Langayan on Saturday at 12:30 PM in CRX C-140!
                 </p>
                 <div className="flex items-center text-emerald-400 font-medium">
                   <span>Start Learning</span>
