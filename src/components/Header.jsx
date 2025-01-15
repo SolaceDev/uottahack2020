@@ -3,9 +3,37 @@ import "../styles/header.css";
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [scrollProgress, setScrollProgress] = useState(0);
+  const [activeSection, setActiveSection] = useState("");
 
   useEffect(() => {
-    const handleScroll = () => setIsScrolled(window.scrollY > 50);
+    const handleScroll = () => {
+      // Handle scroll state
+      setIsScrolled(window.scrollY > 50);
+
+      // Calculate scroll progress
+      const winScroll =
+        document.body.scrollTop || document.documentElement.scrollTop;
+      const height =
+        document.documentElement.scrollHeight -
+        document.documentElement.clientHeight;
+      const scrolled = (winScroll / height) * 100;
+      setScrollProgress(scrolled);
+
+      // Determine active section
+      const sections = navItems.map((item) => item.href.substring(1));
+      const current = sections.find((section) => {
+        const element = document.getElementById(section);
+        if (element) {
+          const rect = element.getBoundingClientRect();
+          return rect.top <= 100 && rect.bottom >= 100;
+        }
+        return false;
+      });
+      setActiveSection(current || "");
+    };
+
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
@@ -18,42 +46,145 @@ const Header = () => {
     });
   };
 
+  const navItems = [
+    { href: "#about", label: "About" },
+    { href: "#prizes", label: "Prizes" },
+    { href: "#schedule", label: "Schedule" },
+    { href: "#team", label: "Team" },
+  ];
+
   return (
     <header className="relative min-h-screen bg-gradient-to-br from-slate-950 via-slate-900 to-emerald-950">
-      {/* Animated background elements */}
-      <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute -top-40 -right-40 w-96 h-96 bg-emerald-500/10 rounded-full blur-3xl animate-pulse" />
-        <div className="absolute top-1/2 -left-40 w-96 h-96 bg-blue-500/10 rounded-full blur-3xl animate-pulse delay-1000" />
+      {/* Progress bar */}
+      <div className="fixed top-0 left-0 w-full h-0.5 bg-slate-800 z-50">
+        <div
+          className="h-full bg-gradient-to-r from-emerald-500 to-blue-500"
+          style={{ width: `${scrollProgress}%` }}
+        />
       </div>
 
       <nav
-        className={`fixed w-full z-50 transition-all duration-300 ${
-          isScrolled ? "bg-slate-950/95 backdrop-blur-md shadow-lg" : ""
+        className={`fixed w-full z-50 transition-all duration-500 ${
+          isScrolled
+            ? "bg-slate-950/95 backdrop-blur-md shadow-lg py-2"
+            : "py-4"
         }`}
       >
         <div className="container mx-auto px-4">
-          <div className="flex items-center justify-between h-20">
-            <a className="navbar-brand" href="/">
+          <div className="flex items-center justify-between">
+            <a href="/" className="relative group flex items-center gap-3">
               <img
-                className="h-8 w-auto"
+                className="h-8 w-auto transform group-hover:scale-105 transition-all duration-300"
                 src="/assets/images/solace.svg"
                 alt="Solace"
               />
+              <span
+                className={`text-white font-medium text-sm opacity-0 -translate-x-4 transition-all duration-300 ${
+                  isScrolled ? "opacity-100 translate-x-0" : ""
+                }`}
+              >
+                uOttaHack
+              </span>
             </a>
-            <div className="nav-links hidden md:flex items-center gap-8">
+
+            {/* Desktop Navigation */}
+            <div className="hidden md:flex items-center gap-8">
+              {navItems.map((item) => (
+                <a
+                  key={item.href}
+                  href={item.href}
+                  className={`text-white/80 hover:text-white text-sm font-medium relative group transition-all duration-300 ${
+                    activeSection === item.href.substring(1)
+                      ? "text-emerald-400"
+                      : ""
+                  }`}
+                >
+                  {item.label}
+                  <span
+                    className={`absolute -bottom-1 left-0 h-0.5 bg-emerald-400 transition-all duration-300 ${
+                      activeSection === item.href.substring(1)
+                        ? "w-full"
+                        : "w-0 group-hover:w-full"
+                    }`}
+                  />
+                </a>
+              ))}
+              <div className="h-6 w-px bg-slate-700" />
               <a
-                href="#about"
-                className="text-white/90 hover:text-white transition-colors"
+                href="#apply"
+                className="px-6 py-2.5 rounded-lg bg-gradient-to-r from-emerald-500 to-blue-500 text-white font-medium text-sm 
+                hover:shadow-lg hover:shadow-emerald-500/25 transform hover:-translate-y-0.5 transition-all duration-300
+                relative overflow-hidden group"
               >
-                About
+                <span className="relative z-10">Join Us</span>
+                <div className="absolute inset-0 bg-gradient-to-r from-blue-500 to-emerald-500 transition-transform duration-300 translate-y-full group-hover:translate-y-0" />
               </a>
+            </div>
+
+            {/* Mobile Menu Button with improved animation */}
+            <button
+              className="md:hidden p-2 rounded-lg hover:bg-slate-800/50 transition-colors"
+              onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+              aria-label="Toggle menu"
+              aria-expanded={isMobileMenuOpen}
+            >
+              <div className="w-6 h-6 relative flex items-center justify-center">
+                {[0, 1, 2].map((index) => (
+                  <span
+                    key={index}
+                    className={`absolute h-0.5 w-full bg-white transform transition-all duration-300 ${
+                      isMobileMenuOpen
+                        ? index === 1
+                          ? "opacity-0"
+                          : index === 0
+                          ? "rotate-45 translate-y-0"
+                          : "-rotate-45 translate-y-0"
+                        : index === 0
+                        ? "-translate-y-2"
+                        : index === 2
+                        ? "translate-y-2"
+                        : ""
+                    }`}
+                  />
+                ))}
+              </div>
+            </button>
+          </div>
+        </div>
+
+        {/* Enhanced Mobile Menu */}
+        <div
+          className={`md:hidden absolute w-full transition-all duration-300 ease-in-out ${
+            isMobileMenuOpen
+              ? "opacity-100 translate-y-0"
+              : "opacity-0 -translate-y-4 pointer-events-none"
+          }`}
+        >
+          <div className="bg-slate-900/95 backdrop-blur-lg border-t border-slate-800 shadow-lg">
+            <div className="container mx-auto px-4 py-6 space-y-4">
+              {navItems.map((item, index) => (
+                <a
+                  key={item.href}
+                  href={item.href}
+                  className={`block py-3 px-4 rounded-lg text-white/80 hover:text-white font-medium transition-all duration-300 ${
+                    activeSection === item.href.substring(1)
+                      ? "bg-slate-800 text-emerald-400"
+                      : "hover:bg-slate-800/50"
+                  }`}
+                  onClick={() => setIsMobileMenuOpen(false)}
+                  style={{
+                    transitionDelay: `${index * 50}ms`,
+                  }}
+                >
+                  {item.label}
+                </a>
+              ))}
               <a
-                href="#prizes"
-                className="text-white/90 hover:text-white transition-colors"
+                href="#apply"
+                className="block w-full py-3 text-center rounded-lg bg-gradient-to-r from-emerald-500 to-blue-500 text-white font-medium 
+                hover:shadow-lg hover:shadow-emerald-500/25 transition-all duration-300"
+                onClick={() => setIsMobileMenuOpen(false)}
               >
-                Prizes
-              </a>
-              <a href="#apply" className="btn-primary">
                 Join Us
               </a>
             </div>
@@ -77,13 +208,37 @@ const Header = () => {
               cutting-edge event broker technology.
             </p>
           </div>
-          <div className="relative group">
-            <div className="absolute inset-0 bg-gradient-to-r from-emerald-500/20 to-blue-500/20 rounded-full blur-3xl group-hover:scale-110 transition-transform duration-700" />
-            <img
-              src="/assets/images/solly.png"
-              alt="Solly the mascot"
-              className="relative z-10 transform transition-all duration-500 hover:scale-105 hover:-translate-y-2"
-            />
+
+          {/* Ultra minimal Solly container */}
+          <div className="relative">
+            {/* Minimal particles */}
+            {[...Array(6)].map((_, i) => (
+              <div
+                key={i}
+                className="absolute animate-floating-particle"
+                style={{
+                  left: `${Math.random() * 100}%`,
+                  top: `${Math.random() * 100}%`,
+                  animationDelay: `${i * 0.7}s`,
+                }}
+              >
+                <div className="w-0.5 h-0.5 bg-emerald-400/20 rounded-full animate-pulse-fade" />
+              </div>
+            ))}
+
+            {/* Pure Solly */}
+            <div className="animate-smooth-float">
+              <img
+                src="/assets/images/solly2.png"
+                alt="Solly the mascot"
+                className="relative drop-shadow-[0_0_15px_rgba(16,185,129,0.15)]"
+              />
+
+              {/* Minimal glow */}
+              <div className="absolute inset-0 -z-10">
+                <div className="absolute inset-0 bg-gradient-radial from-emerald-500/5 to-transparent blur-xl opacity-20" />
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -92,24 +247,19 @@ const Header = () => {
       <div className="absolute bottom-12 left-1/2 transform -translate-x-1/2">
         <div
           onClick={scrollToNextSection}
-          className="flex flex-col items-center gap-2 text-white/50 hover:text-white/90 transition-all cursor-pointer animate-bounce"
+          className="flex flex-col items-center gap-3 text-white/50 hover:text-white/90 transition-all cursor-pointer group"
         >
-          <span className="text-sm font-medium tracking-wider">
+          <span className="text-sm font-medium tracking-wider uppercase group-hover:transform group-hover:-translate-y-1 transition-all duration-300">
             Discover More
           </span>
-          <svg
-            className="w-6 h-6"
-            fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth={2}
-              d="M19 14l-7 7m0 0l-7-7m7 7V3"
-            />
-          </svg>
+          <div className="w-6 h-10 rounded-full border-2 border-current p-1 relative">
+            <div className="w-1.5 h-1.5 bg-current rounded-full mx-auto animate-scroll-dot" />
+          </div>
+          <div className="flex flex-col gap-1 group-hover:gap-2 transition-all duration-300">
+            <div className="w-1 h-1 bg-current rounded-full mx-auto group-hover:scale-150 transition-all" />
+            <div className="w-1 h-1 bg-current rounded-full mx-auto group-hover:scale-125 transition-all delay-75" />
+            <div className="w-1 h-1 bg-current rounded-full mx-auto group-hover:scale-110 transition-all delay-100" />
+          </div>
         </div>
       </div>
 

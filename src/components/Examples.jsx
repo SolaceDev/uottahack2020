@@ -45,34 +45,35 @@ const Examples = () => {
   ];
 
   return (
-    <section className="section-wrapper py-24 bg-slate-900">
-      <div className="section-decoration">
-        <div className="blur-decoration bg-emerald-500 top-0 right-0 opacity-5" />
-        <div className="blur-decoration bg-blue-500 bottom-0 left-0 opacity-5" />
-      </div>
+    <section className="py-32 bg-slate-900 relative overflow-hidden">
+      {/* Enhanced decorative elements */}
+      <div className="absolute top-0 right-0 w-1/2 h-1/2 bg-gradient-to-br from-emerald-500/20 to-blue-500/20 rounded-full blur-3xl transform -translate-y-1/4" />
+      <div className="absolute bottom-0 left-0 w-1/2 h-1/2 bg-gradient-to-tr from-emerald-500/20 to-blue-500/20 rounded-full blur-3xl transform translate-y-1/4" />
 
-      <div className="container mx-auto px-4 relative z-10">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold mb-4 text-white">
-            Start Building Today
-          </h2>
-          <p className="text-slate-400 max-w-2xl mx-auto">
+      <div className="container mx-auto px-4 relative">
+        <div className="max-w-4xl mx-auto text-center mb-20">
+          <div className="mb-12 px-4">
+            <h2 className="text-5xl md:text-6xl font-bold leading-[1.2] tracking-normal [text-wrap:balance] bg-gradient-to-r from-emerald-400 to-blue-400 bg-clip-text text-transparent pb-2">
+              Start Building Today
+            </h2>
+          </div>
+          <p className="text-slate-400 text-lg md:text-xl leading-relaxed max-w-3xl mx-auto">
             Jump start your project with our ready-to-use examples and tutorials
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-12">
           {examples.map((example, index) => (
             <a
               key={index}
               href={example.href}
               target="_blank"
               rel="noopener noreferrer"
-              className="hover-link group bg-slate-800/50 rounded-xl p-6 shadow-lg hover:shadow-xl border border-slate-700/50 backdrop-blur-sm"
+              className="group bg-slate-800/50 rounded-2xl p-8 shadow-lg hover:shadow-2xl border border-slate-700/50 backdrop-blur-sm transform hover:-translate-y-1 transition-all duration-500"
             >
-              <div className="flex items-center gap-4 mb-4">
+              <div className="flex items-center gap-4 mb-6">
                 {example.icon && (
-                  <div className="w-12 h-12 rounded-lg bg-slate-700/50 p-2 group-hover:bg-emerald-900/50 transition-colors">
+                  <div className="w-14 h-14 rounded-xl bg-slate-700/50 p-3 group-hover:bg-emerald-900/50 transition-colors duration-500">
                     <img
                       className="w-full h-full object-contain"
                       src={example.icon}
@@ -80,15 +81,17 @@ const Examples = () => {
                     />
                   </div>
                 )}
-                <h3 className="text-xl font-semibold text-slate-200 group-hover:text-emerald-400 transition-colors">
+                <h3 className="text-2xl font-bold text-slate-200 group-hover:text-emerald-400 transition-colors duration-300">
                   {example.title}
                 </h3>
               </div>
-              <p className="text-slate-400">{example.description}</p>
-              <div className="mt-4 flex items-center text-emerald-400 font-medium">
+              <p className="text-slate-400 text-lg mb-6 leading-relaxed">
+                {example.description}
+              </p>
+              <div className="flex items-center text-emerald-400 font-medium">
                 <span className="text-sm">View Example</span>
                 <svg
-                  className="w-4 h-4 ml-2 transform group-hover:translate-x-2 transition-transform"
+                  className="w-5 h-5 ml-2 transform group-hover:translate-x-2 transition-transform duration-300"
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"

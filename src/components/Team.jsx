@@ -131,51 +131,54 @@ const Team = () => {
   ];
 
   return (
-    <section className="section-wrapper py-24 bg-gradient-to-b from-slate-900 to-slate-950">
-      <div className="section-decoration">
-        <div className="blur-decoration bg-emerald-500 top-0 right-0 animate-glow" />
-        <div className="blur-decoration bg-blue-500 bottom-0 left-0 animate-glow delay-1000" />
-      </div>
+    <section className="py-32 bg-gradient-to-b from-slate-900 to-slate-950 relative overflow-hidden">
+      {/* Enhanced decorative elements */}
+      <div className="absolute top-0 right-0 w-1/2 h-1/2 bg-gradient-to-br from-emerald-500/10 to-blue-500/10 rounded-full blur-3xl transform -translate-y-1/4" />
+      <div className="absolute bottom-0 left-0 w-1/2 h-1/2 bg-gradient-to-tr from-emerald-500/10 to-blue-500/10 rounded-full blur-3xl transform translate-y-1/4" />
 
-      <div className="container mx-auto px-4 relative z-10">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-white mb-4">Meet Our Team</h2>
-          <p className="text-slate-300 max-w-2xl mx-auto">
+      <div className="container mx-auto px-4 relative">
+        <div className="max-w-4xl mx-auto text-center mb-20">
+          <div className="mb-12 px-4">
+            <h2 className="text-5xl md:text-6xl font-bold leading-[1.2] tracking-normal [text-wrap:balance] bg-gradient-to-r from-emerald-400 to-blue-400 bg-clip-text text-transparent pb-2">
+              Meet Our Team
+            </h2>
+          </div>
+          <p className="text-slate-300 text-lg md:text-xl leading-relaxed max-w-3xl mx-auto">
             We're a passionate group of developers and advocates ready to help
             you build amazing event-driven applications.
           </p>
         </div>
 
-        <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-6">
+        <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-6 lg:gap-8">
           {teamMembers.map((member, index) => (
             <div
               key={index}
-              className="group relative overflow-hidden rounded-xl bg-slate-800/50 backdrop-blur-sm p-4 hover:bg-slate-800 transition-all duration-300"
+              className="group relative overflow-hidden rounded-2xl bg-slate-800/50 backdrop-blur-sm p-6 hover:bg-slate-800 transition-all duration-500 transform hover:-translate-y-1 border border-slate-700/50"
             >
               <div className="space-y-4">
-                <div className="aspect-square overflow-hidden rounded-lg">
+                <div className="aspect-square overflow-hidden rounded-xl">
                   <img
                     src={member.image}
                     alt={member.name}
-                    className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500"
+                    className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700"
                   />
                 </div>
                 <div>
-                  <h3 className="text-sm font-semibold text-white group-hover:text-emerald-400 transition-colors">
+                  <h3 className="text-base font-bold text-white group-hover:text-emerald-400 transition-colors duration-300">
                     {member.name}
                   </h3>
-                  <p className="text-xs text-slate-400">{member.role}</p>
+                  <p className="text-sm text-slate-400">{member.role}</p>
                 </div>
                 <div className="flex gap-4">
                   {member.social?.github && (
                     <a
                       href={member.social.github}
-                      className="text-slate-400 hover:text-white transition-colors"
+                      className="text-slate-400 hover:text-emerald-400 transition-colors duration-300"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
                       <svg
-                        className="w-6 h-6"
+                        className="w-5 h-5"
                         fill="currentColor"
                         viewBox="0 0 24 24"
                       >
@@ -190,12 +193,12 @@ const Team = () => {
                   {member.social?.linkedin && (
                     <a
                       href={member.social.linkedin}
-                      className="text-slate-400 hover:text-white transition-colors"
+                      className="text-slate-400 hover:text-emerald-400 transition-colors duration-300"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
                       <svg
-                        className="w-6 h-6"
+                        className="w-5 h-5"
                         fill="currentColor"
                         viewBox="0 0 24 24"
                       >
