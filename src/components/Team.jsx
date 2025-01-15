@@ -4,7 +4,7 @@ const Team = () => {
   const teamMembers = [
     {
       name: "Ghaith Dalla-Ali",
-      role: "Senior Manager, Engineering",
+      role: "Director, Engineering",
       image: "/assets/images/GhaithDallaAli.jpeg",
       social: {
         github: "https://github.com/s",
@@ -21,15 +21,6 @@ const Team = () => {
       },
     },
     {
-      name: "Julina Throop",
-      role: "Senior Corporate Recruiter",
-      image: "/assets/images/JulinaThroop.jpg",
-      social: {
-        github: "https://github.com/s",
-        linkedin: "https://linkedin.com/in/s",
-      },
-    },
-    {
       name: "Dishant Langayan",
       role: "VP, Professional Services",
       image: "/assets/images/DishantLangayan.jpg",
@@ -39,9 +30,9 @@ const Team = () => {
       },
     },
     {
-      name: "Kevin Shao",
-      role: "Senior Software Developer",
-      image: "/assets/images/KevinShao.jpg",
+      name: "Andrea Ross",
+      role: "Manager, Engineering",
+      image: "/assets/images/AndreaRoss.png",
       social: {
         github: "https://github.com/s",
         linkedin: "https://linkedin.com/in/s",
@@ -102,9 +93,27 @@ const Team = () => {
       },
     },
     {
-      name: "Fabrice Mikobi",
-      role: "Software Developer (Co-op)",
-      image: "/assets/images/FabriceMikobi.png",
+      name: "Alireza Parvizimosaed",
+      role: "Senior Software Designer - AI Integration",
+      image: "/assets/images/AlirezaParvizimosaed.png",
+      social: {
+        github: "https://github.com/s",
+        linkedin: "https://linkedin.com/in/s",
+      },
+    },
+    {
+      name: "Cyrus Mobini",
+      role: "Software Engineer - AI Integration",
+      image: "/assets/images/CyrusMobini.png",
+      social: {
+        github: "https://github.com/s",
+        linkedin: "https://linkedin.com/in/s",
+      },
+    },
+    {
+      name: "Prakrut Upadhyay",
+      role: "Technical Customer Support Engineer",
+      image: "/assets/images/PrakrutUpadhyay.png",
       social: {
         github: "https://github.com/s",
         linkedin: "https://linkedin.com/in/s",
@@ -112,17 +121,8 @@ const Team = () => {
     },
     {
       name: "Rabih Daoud",
-      role: "Technical Project Coordinator (Co-op)",
+      role: "Business Operations Analyst",
       image: "/assets/images/RabihDaoud.jpg",
-      social: {
-        github: "https://github.com/s",
-        linkedin: "https://linkedin.com/in/s",
-      },
-    },
-    {
-      name: "Manaal Mujeebuddin",
-      role: "Business Operations (Co-op)",
-      image: "/assets/images/ManaalMujeebuddin.jpg",
       social: {
         github: "https://github.com/s",
         linkedin: "https://linkedin.com/in/s",
