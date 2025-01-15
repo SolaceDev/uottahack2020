@@ -30,17 +30,17 @@ const Examples = () => {
       description: "A Python application using the PAHO MQTT API.",
     },
     {
-      href: "https://tutorials.solace.dev/",
-      title: "Solace Tutorials",
-      description:
-        "Want to use a language or client library not in the examples above? Check out the full suite of Solace Tutorials that includes all of our supported client library frameworks and more advanced examples of integrating with the PubSub+ Event Broker.",
-    },
-    {
       href: "https://github.com/thrillstone/solace-chrome-extension",
       icon: "assets/images/chrome.png",
       title: "Chrome extension using Paho MQTT",
       description:
         "Building a chrome extension and want to use Solace messaging? This repo gives you the blueprint to includ paho in your extension and start receiving messages.",
+    },
+    {
+      href: "https://tutorials.solace.dev/",
+      title: "Solace Tutorials",
+      description:
+        "Want to use a language or client library not in the examples above? Check out the full suite of Solace Tutorials that includes all of our supported client library frameworks and more advanced examples of integrating with the PubSub+ Event Broker.",
     },
   ];
 
@@ -68,7 +68,7 @@ const Examples = () => {
           {/* Quick Start Guide - Updated */}
           <div className="lg:col-span-3 mb-12">
             <a
-              href="https://tutorials.solace.dev/get-started"
+              href="https://www.solace.dev/"
               className="group relative block bg-gradient-to-r from-slate-800 to-slate-900 rounded-2xl p-8 shadow-lg hover:shadow-2xl border border-slate-700/50 backdrop-blur-sm transform hover:-translate-y-1 transition-all duration-500 overflow-hidden"
             >
               <div className="absolute inset-0 bg-gradient-to-r from-emerald-500/10 to-blue-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
@@ -95,8 +95,8 @@ const Examples = () => {
                   Quick Start Guide
                 </h3>
                 <p className="text-slate-400 text-lg mb-6">
-                  Complete beginner? Start here! This 15-minute guide will teach
-                  you the basics of event-driven architecture and get your first
+                  Complete beginner? Start here! This guide will teach you the
+                  basics of event-driven architecture and get your first
                   application running.
                 </p>
                 <div className="flex items-center text-emerald-400 font-medium">

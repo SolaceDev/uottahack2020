@@ -1,6 +1,5 @@
 import React from "react";
 import Header from "./components/Header";
-import RegistrationForm from "./components/RegistrationForm";
 import Competition from "./components/Competition";
 import Team from "./components/Team";
 import FeaturedArticles from "./components/FeaturedArticles";

@@ -39,7 +39,9 @@ const Competition = () => {
                     email
                   </p>
                   <a
-                    href="https://console.solace.cloud/login/sign-up"
+                    href="https://console.solace.cloud/login/new-account"
+                    target="_blank"
+                    rel="noreferrer"
                     className="text-emerald-600 hover:text-emerald-700 underline mt-2 inline-block"
                   >
                     Create Account →
@@ -54,11 +56,13 @@ const Competition = () => {
                 <div>
                   <h4 className="font-semibold mb-2">Register Your Team</h4>
                   <p>
-                    Submit your team details and Solace account email through
-                    our registration form
+                    Submit your team details and school email through our
+                    registration form
                   </p>
                   <a
-                    href="[MICROSOFT_FORM_URL]"
+                    href="https://forms.office.com/r/hyHREY7ZVh?embed=true"
+                    target="_blank"
+                    rel="noreferrer"
                     className="text-emerald-600 hover:text-emerald-700 underline mt-2 inline-block"
                   >
                     Register Team →
