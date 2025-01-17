@@ -1,0 +1,39 @@
+.row {
+  @apply flex flex-wrap -mx-4;
+}
+
+.col {
+  @apply px-4;
+}
+
+.s12 {
+  @apply w-full;
+}
+
+.m5 {
+  @apply md:w-5/12;
+}
+
+.m6 {
+  @apply md:w-1/2;
+}
+
+.offset-m1 {
+  @apply md:ml-[8.33333%];
+}
+
+.container {
+  @apply max-w-7xl mx-auto px-4;
+}
+
+.content {
+  @apply relative overflow-hidden;
+}
+
+section {
+  @apply overflow-visible relative;
+}
+
+main {
+  @apply flex-1;
+}

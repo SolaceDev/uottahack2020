@@ -1,0 +1,118 @@
+/* Header styles */
+header {
+  @apply bg-gradient-to-br from-[var(--primary-color)] to-[var(--primary-light)] min-h-screen relative overflow-hidden text-white/90 select-none;
+  position: relative;
+}
+
+.navbar {
+  @apply fixed top-0 left-0 right-0 z-50 transition-all duration-300;
+
+  &.scrolled {
+    @apply backdrop-blur-md bg-white/10 border-b border-white/10;
+  }
+}
+
+.btn-outline {
+  @apply px-6 py-2 rounded-xl border-2 border-white/30 text-white hover:bg-white/10 transition-all;
+}
+
+.hero-section {
+  @apply relative z-10;
+}
+
+.hero-content {
+  opacity: 0;
+  animation: fadeIn 1s ease-out forwards;
+}
+
+.hero-visual {
+  .aspect-square {
+    width: 80%;
+    height: 80%;
+    top: 10%;
+    left: 10%;
+    filter: blur(40px);
+  }
+}
+
+.stats-card {
+  animation: slideIn 0.6s ease-out forwards;
+  transform: translateY(100%);
+}
+
+.wave-divider {
+  @apply absolute bottom-0 left-0 w-full h-[100px] fill-white;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideIn {
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes scroll-dot {
+  0%,
+  100% {
+    transform: translateY(0);
+    opacity: 0.5;
+  }
+  50% {
+    transform: translateY(300%);
+    opacity: 1;
+  }
+}
+
+.animate-scroll-dot {
+  animation: scroll-dot 2s ease-in-out infinite;
+}
+
+header nav {
+  @apply backdrop-blur-md bg-white/5 border-b border-white/10 sticky top-0 w-[90%] mx-auto shadow-none;
+
+  &.scrolled {
+    @apply bg-white/90 border-gray-200 shadow-sm;
+  }
+}
+
+header nav .links {
+  @apply hidden;
+}
+
+#team-photo {
+  @apply absolute w-[50vw] max-w-[700px] min-w-[250px] right-0 z-40 rounded-2xl shadow-xl;
+  animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+header aside {
+  @apply flex flex-row-reverse;
+}
+
+header aside img {
+  @apply w-[35px];
+}
+
+/* Header nav brand */
+header nav .navbar-brand {
+  @apply m-0 mx-8;
+}

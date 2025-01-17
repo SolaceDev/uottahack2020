@@ -1,0 +1,207 @@
+/* Navigation */
+.navbar {
+  @apply bg-[var(--primary-color)] py-4 w-full;
+}
+
+.navbar-brand {
+  @apply inline-block;
+  img {
+    @apply h-8;
+  }
+}
+
+/* Cards */
+.card {
+  @apply bg-white rounded-2xl shadow-lg overflow-hidden border border-gray-100;
+  border-radius: var(--border-radius);
+  transition: var(--transition-default);
+  &:hover {
+    @apply shadow-xl transform -translate-y-1;
+  }
+  &.highlight {
+    @apply border-l-4 border-l-[var(--primary-color)];
+  }
+
+  &.interactive {
+    cursor: pointer;
+    &:hover {
+      @apply scale-[1.02] rotate-1;
+    }
+  }
+}
+
+/* Card components */
+.card-image {
+  @apply relative;
+}
+
+.card-content {
+  @apply p-8;
+}
+
+.card-action {
+  @apply p-4 border-t border-gray-200;
+}
+
+.card-title {
+  @apply text-xl font-bold mb-2;
+}
+
+/* Buttons */
+button {
+  @apply px-8 py-3 rounded-xl bg-[var(--primary-color)] text-white font-medium shadow-sm;
+  transition: var(--transition-default);
+
+  &:hover {
+    @apply shadow-lg transform -translate-y-0.5;
+    background: linear-gradient(
+      45deg,
+      var(--primary-color),
+      var(--primary-light)
+    );
+  }
+  &:active {
+    @apply brightness-120;
+  }
+  &:focus {
+    @apply bg-[var(--dark-blue)];
+  }
+  a {
+    @apply text-white/90;
+  }
+  &.outline {
+    @apply bg-transparent border-2 border-[var(--primary-color)] text-[var(--primary-color)];
+    &:hover {
+      @apply bg-[var(--primary-color)] text-white;
+    }
+  }
+
+  &.with-icon {
+    @apply flex items-center gap-2;
+    svg {
+      @apply transition-transform;
+    }
+    &:hover svg {
+      @apply translate-x-1;
+    }
+  }
+}
+
+/* Team images */
+.team-images {
+  @apply flex flex-wrap justify-center items-stretch;
+
+  img {
+    @apply rounded-2xl shadow-lg;
+    width: clamp(150px, 15vw, 300px);
+    transition: var(--transition-default);
+    &:hover {
+      @apply shadow-xl transform -translate-y-1;
+    }
+  }
+
+  p {
+    @apply text-center -mt-1 font-semibold;
+    font-size: clamp(0.75rem, 1vw, 1.2em);
+  }
+}
+
+/* Background variants */
+.green-background {
+  @apply bg-[var(--primary-color)] text-white/90;
+}
+
+.blue-background {
+  @apply bg-[var(--dark-blue)] text-white/90;
+}
+
+.heading-container {
+  @apply my-16 relative;
+}
+
+/* Competition section */
+#competition .cards {
+  @apply flex flex-row justify-center gap-8;
+  > div {
+    @apply flex-1;
+  }
+}
+
+/* Examples section */
+#examples {
+  .example-group {
+    @apply flex flex-wrap justify-between;
+  }
+  .example {
+    @apply w-full;
+  }
+  h1,
+  p {
+    @apply text-white;
+  }
+  h2 a {
+    @apply text-[var(--primary-color)];
+  }
+}
+
+/* Avatars */
+.avatars {
+  @apply flex flex-row-reverse;
+  img {
+    @apply rounded-full w-[40px] h-[40px] mx-[5px];
+  }
+}
+
+/* Prize component */
+.prize {
+  @apply flex flex-col mx-auto;
+  .prize-text {
+    @apply text-[2em] text-center font-bold;
+    span {
+      @apply text-[9em];
+      background: linear-gradient(
+        45deg,
+        var(--primary-color),
+        var(--primary-light)
+      );
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+}
+
+/* Image containers */
+.image-container {
+  @apply relative w-full text-center;
+}
+
+.desktop-image {
+  @apply w-[70vw] h-auto block mx-auto;
+}
+
+.mobile-image {
+  @apply hidden w-full h-auto;
+}
+
+/* Amazon logo specific */
+#amazon {
+  @apply w-[200px];
+}
+
+/* Diversity section */
+#diversity {
+  #people {
+    @apply w-full h-auto max-w-[500px] max-h-[500px] rounded-full;
+  }
+  strong {
+    @apply text-2xl text-[var(--dark-blue)];
+  }
+}
+
+.section-header {
+  @apply relative mb-16;
+  &::after {
+    content: "";
+    @apply absolute left-0 -bottom-4 w-24 h-1 bg-[var(--primary-color)] rounded-full;
+  }
+}

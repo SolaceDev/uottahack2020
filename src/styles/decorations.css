@@ -1,0 +1,80 @@
+.bottom-slant {
+  @apply -z-10 bg-[var(--primary-color)] h-[400px] w-[150%] absolute -bottom-[150px] left-0;
+  transform: rotate(4deg) translateX(-10%);
+  -webkit-transform: rotate(4deg) translateX(-10%);
+}
+
+.examples-top-slant {
+  @apply -z-10 bg-[var(--primary-color)] h-[400px] w-[120%] rotate-[4deg] -translate-x-[10%] absolute -top-[100px];
+}
+
+.examples-bottom-slant {
+  @apply -z-10 bg-[var(--primary-color)] h-[400px] w-[120%] -rotate-[7deg] -translate-x-[10%] absolute;
+  /* Remove fixed top positioning and adjust based on content */
+}
+
+/* Decorative elements positioning */
+.tri1,
+.tri2,
+.tri3,
+.tri4,
+.circ1,
+.circ2,
+.circ3,
+.circ4,
+.rect1,
+.rect2,
+.rect3,
+.rect4 {
+  @apply -z-10 absolute;
+}
+
+.tri1 {
+  @apply w-[325px] top-[2600px] left-[1000px];
+}
+.tri2 {
+  @apply w-[300px] top-[2700px] left-[1200px];
+}
+.tri3 {
+  @apply w-[325px] top-[5000px];
+}
+.tri4 {
+  @apply w-[300px] top-[5100px];
+}
+
+.circ1 {
+  @apply w-[250px] top-[1500px] right-[10px];
+}
+.circ2 {
+  @apply w-[220px] top-[2300px] -left-[25px];
+}
+.circ3 {
+  @apply w-[250px] top-[4000px] right-[10px];
+}
+.circ4 {
+  @apply w-[220px] top-[4400px] -left-[25px];
+}
+
+.rect1 {
+  @apply w-[240px] top-[2100px] -left-[60px];
+}
+.rect2 {
+  @apply w-[250px] top-[1700px] right-[20px];
+}
+.rect3 {
+  @apply w-[240px] top-[4200px];
+}
+.rect4 {
+  @apply w-[250px] top-[3800px];
+}
+
+.outline-main {
+  stroke-width: 3;
+}
+
+.outline-second,
+.placeholder,
+.outline-third,
+.outline-fourth {
+  stroke-width: 1.5;
+}
