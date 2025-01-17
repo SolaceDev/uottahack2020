@@ -46,7 +46,7 @@ const Examples = () => {
 
   return (
     <section
-      id="examples"
+      id="quickstart"
       className="py-32 bg-slate-900 relative overflow-hidden"
     >
       {/* Enhanced decorative elements */}
