@@ -27,9 +27,9 @@ const Header = () => {
 
   const navItems = [
     { to: "challenge", label: "Challenge" },
-    { to: "examples", label: "Examples" },
-    { to: "team", label: "Team" },
+    { to: "quickstart", label: "Quick Start" },
     { to: "winners", label: "Past Winners" },
+    { to: "team", label: "Team" },
   ];
 
   return (
@@ -212,7 +212,7 @@ const Header = () => {
                 Join the Challenge
               </Link>
               <Link
-                to="examples"
+                to="quickstart"
                 spy={true}
                 smooth={true}
                 offset={-70}
@@ -220,7 +220,7 @@ const Header = () => {
                 className="px-8 py-3 rounded-lg border border-white/20 text-white font-medium hover:bg-white/10 transition-all duration-300 cursor-pointer"
                 onClick={() => setIsMobileMenuOpen(false)} // Add this if you want to close mobile menu on click
               >
-                View Examples
+                Jump-start your Hack
               </Link>
             </div>
           </div>

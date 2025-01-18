@@ -20,7 +20,7 @@ const Competition = () => {
           </h2>
           <p className="text-slate-600 text-lg md:text-xl leading-relaxed max-w-3xl mx-auto mt-6">
             Build innovative event-driven solutions and compete for amazing
-            prizes
+            prizes!
           </p>
         </div>
 
@@ -54,11 +54,11 @@ const Competition = () => {
                   </div>
                   <div className="flex-grow">
                     <h4 className="font-semibold text-xl mb-2">
-                      Create Solace Account
+                      Create a Solace Cloud Account
                     </h4>
                     <p className="text-slate-600 mb-3">
-                      Sign up for a free Solace Cloud account using your school
-                      email
+                      Sign up for a free Solace Cloud account using your
+                      university email
                     </p>
                     <a
                       href="https://console.solace.cloud/login/new-account"
@@ -96,7 +96,7 @@ const Competition = () => {
                       Register Your Team
                     </h4>
                     <p className="text-slate-600 mb-3">
-                      Submit your team details through our registration form
+                      Submit your team's details through our registration form
                     </p>
                     <a
                       href="https://forms.office.com/r/hyHREY7ZVh?embed=true"
@@ -131,11 +131,11 @@ const Competition = () => {
                   </div>
                   <div>
                     <h4 className="font-semibold text-xl mb-2">
-                      Start Building
+                      Start Hacking
                     </h4>
                     <p className="text-slate-600">
-                      Check out our resources and examples to kickstart your
-                      project
+                      Check out the quick start resources below to kickstart
+                      your hack
                     </p>
                   </div>
                 </div>
@@ -245,7 +245,7 @@ const Competition = () => {
                           d="M5 13l4 4L19 7"
                         />
                       </svg>
-                      Event-Driven Architecture basics
+                      Event-Driven Architecture (EDA) basics
                     </li>
                     <li
                       className="flex items-center gap-2 text-slate-600 transition-all duration-300
@@ -264,7 +264,7 @@ const Competition = () => {
                           d="M5 13l4 4L19 7"
                         />
                       </svg>
-                      Solace PubSub+ fundamentals
+                      How to connect applications to a PubSub+ Event Broker
                     </li>
                     <li
                       className="flex items-center gap-2 text-slate-600 transition-all duration-300
@@ -301,19 +301,20 @@ const Competition = () => {
             </h3>
             <div className="space-y-4 text-slate-600">
               <div className="space-y-4">
-                <p className="font-semibold">Your solution must include:</p>
+                <p className="font-semibold">
+                  Your hack will be assessed on the following criteria:
+                </p>
                 <ul className="list-disc pl-6 space-y-3">
                   <li className="transition-all duration-300 hover:text-slate-800 hover:translate-x-1">
-                    Multiple applications communicating with each other
+                    It must be comprised of multiple applications communicating
+                    with one another through a PubSub+ Event Broker
                   </li>
                   <li className="transition-all duration-300 hover:text-slate-800 hover:translate-x-1">
-                    Integration with Solace PubSub+ Event Broker
+                    It should solve a real-world problem
                   </li>
                   <li className="transition-all duration-300 hover:text-slate-800 hover:translate-x-1">
-                    Solution to a real-world problem
-                  </li>
-                  <li className="transition-all duration-300 hover:text-slate-800 hover:translate-x-1">
-                    Effective use of Event-Driven Architecture
+                    It should use Event-Driven Architecture and its concepts
+                    effectively
                   </li>
                 </ul>
               </div>

@@ -7,7 +7,7 @@ const Team = () => {
       role: "Director, Engineering",
       image: "/assets/images/GhaithDallaAli.jpeg",
       social: {
-        linkedin: "https://www.linkedin.com/in/ghaith-dalla-ali/",
+        //linkedin: "https://www.linkedin.com/in/ghaith-dalla-ali/",
       },
     },
     {
@@ -15,7 +15,7 @@ const Team = () => {
       role: "Employee Engagement Lead",
       image: "/assets/images/StephanieKaila.jpg",
       social: {
-        linkedin: "https://www.linkedin.com/in/stephanie-kaila-b16275109/",
+        //linkedin: "https://www.linkedin.com/in/stephanie-kaila-b16275109/",
       },
     },
     {
@@ -23,7 +23,7 @@ const Team = () => {
       role: "VP, Professional Services",
       image: "/assets/images/DishantLangayan.jpg",
       social: {
-        linkedin: "https://www.linkedin.com/in/dishantlangayan/",
+        //linkedin: "https://www.linkedin.com/in/dishantlangayan/",
       },
     },
     {
@@ -31,7 +31,7 @@ const Team = () => {
       role: "Manager, Engineering",
       image: "/assets/images/AndreaRoss.png",
       social: {
-        linkedin: "https://www.linkedin.com/in/aross/",
+        //linkedin: "https://www.linkedin.com/in/aross/",
       },
     },
     {
@@ -39,7 +39,7 @@ const Team = () => {
       role: "Senior Architect",
       image: "/assets/images/MichaelCardy.jpg",
       social: {
-        linkedin: "https://www.linkedin.com/in/mcardy/",
+        //linkedin: "https://www.linkedin.com/in/mcardy/",
       },
     },
     {
@@ -47,7 +47,7 @@ const Team = () => {
       role: "Senior Software Developer",
       image: "/assets/images/GaborSzokoli.jpg",
       social: {
-        linkedin: "https://www.linkedin.com/in/gabor-szokoli-25a16011/",
+        //linkedin: "https://www.linkedin.com/in/gabor-szokoli-25a16011/",
       },
     },
     {
@@ -55,7 +55,7 @@ const Team = () => {
       role: "Software Developer",
       image: "/assets/images/MohamedRadwan.jpg",
       social: {
-        linkedin: "https://www.linkedin.com/in/mradwan9/",
+        //linkedin: "https://www.linkedin.com/in/mradwan9/",
       },
     },
     {
@@ -63,7 +63,7 @@ const Team = () => {
       role: "Software Developer",
       image: "/assets/images/SamuelGamelin.jpg",
       social: {
-        linkedin: "https://www.linkedin.com/in/-sg/",
+        //linkedin: "https://www.linkedin.com/in/-sg/",
       },
     },
     {
@@ -71,7 +71,7 @@ const Team = () => {
       role: "Software Developer",
       image: "/assets/images/KeithHuang.jpg",
       social: {
-        linkedin: "https://www.linkedin.com/in/yixiang-huang-684903178/",
+        //linkedin: "https://www.linkedin.com/in/yixiang-huang-684903178/",
       },
     },
     {
@@ -79,21 +79,21 @@ const Team = () => {
       role: "Software Developer",
       image: "/assets/images/JackClarke.jpg",
       social: {
-        linkedin: "https://www.linkedin.com/in/jack-clarke0/",
+        //linkedin: "https://www.linkedin.com/in/jack-clarke0/",
       },
     },
     {
       name: "Alireza Parvizimosaed",
       role: "Senior Software Designer - AI Integration",
       image: "/assets/images/AlirezaParvizimosaed.png",
-      social: {},
+      //social: {},
     },
     {
       name: "Cyrus Mobini",
       role: "Software Engineer - AI Integration",
       image: "/assets/images/CyrusMobini.png",
       social: {
-        linkedin: "https://www.linkedin.com/in/cyrusmobini/",
+        //linkedin: "https://www.linkedin.com/in/cyrusmobini/",
       },
     },
     {
@@ -101,7 +101,7 @@ const Team = () => {
       role: "Technical Customer Support Engineer",
       image: "/assets/images/PrakrutUpadhyay.png",
       social: {
-        linkedin: "https://www.linkedin.com/in/prakrut99/",
+        //linkedin: "https://www.linkedin.com/in/prakrut99/",
       },
     },
     {
@@ -109,7 +109,7 @@ const Team = () => {
       role: "Business Operations Analyst",
       image: "/assets/images/RabihDaoud.jpg",
       social: {
-        linkedin: "https://www.linkedin.com/in/rabihdaoud/",
+        //linkedin: "https://www.linkedin.com/in/rabihdaoud/",
       },
     },
   ];

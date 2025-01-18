@@ -25,7 +25,7 @@ const InTheMoment = () => {
             <div className="relative rounded-2xl overflow-hidden shadow-xl group">
               <div className="absolute inset-0 bg-gradient-to-t from-slate-900/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
               <img
-                src="/assets/images/Collage-Desktop.png"
+                src="/assets/images/Collage-2-Desktop.png"
                 alt="Hackathon Moments"
                 className="w-full transform group-hover:scale-105 transition-transform duration-700"
               />
@@ -37,7 +37,7 @@ const InTheMoment = () => {
             <div className="relative rounded-2xl overflow-hidden shadow-xl">
               <div className="absolute inset-0 bg-gradient-to-t from-slate-900/60 via-transparent to-transparent" />
               <img
-                src="/assets/images/Collage-Mobile.png"
+                src="/assets/images/Collage-2-Mobile.png"
                 alt="Hackathon Moments"
                 className="w-full"
               />
