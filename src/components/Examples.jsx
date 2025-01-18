@@ -24,7 +24,7 @@ const Examples = () => {
         "A Kotlin-based android application using Paho MQTT that connects toSolace Cloud and publishes a message, receives the message through a subscription and displays it on the screen.",
     },
     {
-      href: "https://github.com/j-setiawan/solace-python-mqtt-example",
+      href: "https://github.com/mo-radwan1/solace-octranspo-tracker",
       icon: "assets/images/python.svg",
       title: "A Python application using Paho MQTT",
       description: "A Python application using the PAHO MQTT API.",
