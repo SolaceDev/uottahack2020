@@ -62,7 +62,7 @@ const Header = () => {
                   isScrolled ? "opacity-100 translate-x-0" : ""
                 }`}
               >
-                uOttaHack 7
+                uOttaHack 8
               </span>
             </a>
 
