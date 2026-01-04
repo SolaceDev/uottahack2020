@@ -11,6 +11,14 @@ const Team = () => {
       },
     },
     {
+      name: "James Ellwood",
+      role: "Director, Engineering Platform",
+      image: "/assets/images/JamesEllwood.jpg",
+      social: {
+        //linkedin: "https://www.linkedin.com/in/james-ellwood-18634972/",
+      },
+    },
+        {
       name: "Stephanie Kaila",
       role: "Employee Engagement Lead",
       image: "/assets/images/StephanieKaila.jpg",
@@ -19,19 +27,11 @@ const Team = () => {
       },
     },
     {
-      name: "James Ellwood",
-      role: "Director, Engineering Platform",
-      image: "/assets/images/JamesEllwood.jpg",
+      name: "Julina Throop",
+      role: "Senior Corporate Recruiter",
+      image: "/assets/images/JulinaThroop.jpg",
       social: {
-        //linkedin: "https://www.linkedin.com/in/james-ellwood-18634972/",
-      },
-    },
-    {
-      name: "Michelle Thomas",
-      role: "Principal Technical Writer",
-      image: "/assets/images/MichelleThomas.jpg",
-      social: {
-        //linkedin: "https://www.linkedin.com/in/michelle-thomas-644b9023//",
+      // linkedin: "https://www.linkedin.com/in/julinathroop/", 
       },
     },
     {
@@ -59,6 +59,14 @@ const Team = () => {
       },
     },
     {
+      name: "Michelle Thomas",
+      role: "Principal Technical Writer",
+      image: "/assets/images/MichelleThomas.jpg",
+      social: {
+        //linkedin: "https://www.linkedin.com/in/michelle-thomas-644b9023//",
+      },
+    },
+    {
       name: "Samuel Gamelin",
       role: "Software Developer",
       image: "/assets/images/SamuelGamelin.jpg",
@@ -82,14 +90,7 @@ const Team = () => {
         //linkedin: "https://www.linkedin.com/in/jack-clarke0/",
       },
     },
-    {
-      name: "Julina Throop",
-      role: "Senior Corporate Recruiter",
-      image: "/assets/images/JulinaThroop.jpg",
-      social: {
-      // linkedin: "https://www.linkedin.com/in/julinathroop/", 
-      },
-    },
+
     {
       name: "Cyrus Mobini",
       role: "Software Engineer - AI Integration",

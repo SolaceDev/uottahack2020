@@ -13,13 +13,13 @@ const Competition = () => {
       <div className="container mx-auto px-4 relative">
         <div className="max-w-4xl mx-auto text-center mb-20">
           <span className="px-4 py-2 rounded-full bg-emerald-500/10 text-emerald-600 text-sm font-medium mb-4 inline-block">
-            $1000 in Amazon Gift Cards
+            $1000 in Prizes
           </span>
           <h2 className="text-5xl md:text-6xl font-bold leading-[1.2] tracking-normal [text-wrap:balance] bg-gradient-to-r from-emerald-600 to-blue-600 bg-clip-text text-transparent pb-2">
             Join the Challenge
           </h2>
           <p className="text-slate-600 text-lg md:text-xl leading-relaxed max-w-3xl mx-auto mt-6">
-            Build innovative event-driven solutions and compete for amazing
+            Build innovative agentic AI solutions and compete for amazing
             prizes!
           </p>
         </div>
@@ -155,8 +155,8 @@ const Competition = () => {
                 <div className="absolute -bottom-12 inset-x-0 flex justify-center">
                   <div className="w-24 h-24 rounded-full border-4 border-white overflow-hidden bg-white">
                     <img
-                      src="/assets/images/DishantLangayan.jpg"
-                      alt="Dishant Langayan"
+                      src="/assets/images/MohamedRadwan.jpg"
+                      alt="Mohamed Radwan"
                       className="w-full h-full object-cover"
                     />
                   </div>
@@ -169,7 +169,7 @@ const Competition = () => {
                     Workshop Session
                   </h3>
                   <p className="text-emerald-600 font-medium">
-                    with Dishant Langayan
+                    with Mohamed Radwan
                   </p>
                 </div>
 
@@ -219,7 +219,7 @@ const Competition = () => {
                         d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
                       />
                     </svg>
-                    <p className="text-slate-700 font-medium">Room CRX C-140</p>
+                    <p className="text-slate-700 font-medium">***Room TBD***</p>
                   </div>
                 </div>
 
@@ -245,7 +245,7 @@ const Competition = () => {
                           d="M5 13l4 4L19 7"
                         />
                       </svg>
-                      Event-Driven Architecture (EDA) basics
+                      Solace Agent Mesh (SAM) basics
                     </li>
                     <li
                       className="flex items-center gap-2 text-slate-600 transition-all duration-300
@@ -264,7 +264,7 @@ const Competition = () => {
                           d="M5 13l4 4L19 7"
                         />
                       </svg>
-                      How to connect applications to a PubSub+ Event Broker
+                      How to build applications with SAM
                     </li>
                     <li
                       className="flex items-center gap-2 text-slate-600 transition-all duration-300
@@ -306,15 +306,13 @@ const Competition = () => {
                 </p>
                 <ul className="list-disc pl-6 space-y-3">
                   <li className="transition-all duration-300 hover:text-slate-800 hover:translate-x-1">
-                    It must be comprised of multiple applications communicating
-                    with one another through a PubSub+ Event Broker
+                    It must be comprised of one or more custom agents
                   </li>
                   <li className="transition-all duration-300 hover:text-slate-800 hover:translate-x-1">
                     It should solve a real-world problem
                   </li>
                   <li className="transition-all duration-300 hover:text-slate-800 hover:translate-x-1">
-                    It should use Event-Driven Architecture and its concepts
-                    effectively
+                    It should use SAM and its concepts effectively
                   </li>
                 </ul>
               </div>

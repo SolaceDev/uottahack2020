@@ -99,9 +99,9 @@ const Examples = () => {
                 </h3>
                 <p className="text-slate-400 text-lg mb-6">
                   Complete beginner? Start here! This guide will teach you the
-                  basics of event-driven architecture and get your first
-                  application running. Don't miss our workshop with Dishant
-                  Langayan on Saturday at 12:30 PM in CRX C-140!
+                  basics of Solace Agent Mesh and get your first
+                  application running. Don't miss our workshop with Mohamed Radwan
+                  on Saturday at 12:30 PM in ***ROOM***!
                 </p>
                 <div className="flex items-center text-emerald-400 font-medium">
                   <span>Start Learning</span>
