@@ -192,7 +192,7 @@ const Competition = () => {
                       />
                     </svg>
                     <p className="text-slate-700 font-medium">
-                      Saturday at 12:30 PM
+                      Saturday at 2:00PM
                     </p>
                   </div>
 
@@ -219,7 +219,7 @@ const Competition = () => {
                         d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
                       />
                     </svg>
-                    <p className="text-slate-700 font-medium">***Room TBD***</p>
+                    <p className="text-slate-700 font-medium">CRX C240</p>
                   </div>
                 </div>
 
@@ -245,7 +245,7 @@ const Competition = () => {
                           d="M5 13l4 4L19 7"
                         />
                       </svg>
-                      Solace Agent Mesh (SAM) basics
+                      Agentic AI, multi-agent AI systems, and Event-Driven Architecture (EDA)
                     </li>
                     <li
                       className="flex items-center gap-2 text-slate-600 transition-all duration-300
@@ -264,7 +264,7 @@ const Competition = () => {
                           d="M5 13l4 4L19 7"
                         />
                       </svg>
-                      How to build applications with SAM
+                      How to build AI agents with Solace Agent Mesh (SAM)
                     </li>
                     <li
                       className="flex items-center gap-2 text-slate-600 transition-all duration-300
@@ -306,13 +306,13 @@ const Competition = () => {
                 </p>
                 <ul className="list-disc pl-6 space-y-3">
                   <li className="transition-all duration-300 hover:text-slate-800 hover:translate-x-1">
-                    It must be comprised of one or more custom agents
+                    It must include one or more custom AI agents in Solace Agent Mesh
                   </li>
                   <li className="transition-all duration-300 hover:text-slate-800 hover:translate-x-1">
-                    It should solve a real-world problem
+                    It must creatively solve a real-world problem
                   </li>
                   <li className="transition-all duration-300 hover:text-slate-800 hover:translate-x-1">
-                    It should use SAM and its concepts effectively
+                    It must use Solace Agent Mesh and its concepts effectively
                   </li>
                 </ul>
               </div>

@@ -62,8 +62,7 @@ const Examples = () => {
             Start Building Now
           </h2>
           <p className="text-slate-400 text-lg md:text-xl leading-relaxed max-w-3xl mx-auto mt-6">
-            Jump-start your project with our curated examples. Each example
-            includes full source code and step-by-step instructions.
+            Jump-start your project with our curated examples. Each example includes full source code and step-by-step instructions.
           </p>
         </div>
 
@@ -71,7 +70,7 @@ const Examples = () => {
           {/* Quick Start Guide - Updated */}
           <div className="lg:col-span-3 mb-12">
             <a
-              href="https://www.solace.dev/"
+              href="https://solacelabs.github.io/solace-agent-mesh/docs/documentation/getting-started/"
               className="group relative block bg-gradient-to-r from-slate-800 to-slate-900 rounded-2xl p-8 shadow-lg hover:shadow-2xl border border-slate-700/50 backdrop-blur-sm transform hover:-translate-y-1 transition-all duration-500 overflow-hidden"
             >
               <div className="absolute inset-0 bg-gradient-to-r from-emerald-500/10 to-blue-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
@@ -95,13 +94,13 @@ const Examples = () => {
                   </span>
                 </div>
                 <h3 className="text-3xl font-bold text-slate-200 mb-4">
-                  Quick Start Guide
+                  Getting Started With Solace Agent Mesh
                 </h3>
                 <p className="text-slate-400 text-lg mb-6">
                   Complete beginner? Start here! This guide will teach you the
-                  basics of Solace Agent Mesh and get your first
+                  basics of Solace Agent Mesh and help you get your first
                   application running. Don't miss our workshop with Mohamed Radwan
-                  on Saturday at 12:30 PM in ***ROOM***!
+                  on Saturday at 2:00PM in CRX C240!
                 </p>
                 <div className="flex items-center text-emerald-400 font-medium">
                   <span>Start Learning</span>

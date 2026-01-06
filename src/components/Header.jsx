@@ -30,7 +30,7 @@ const Header = () => {
     { to: "quickstart", label: "Quick Start" },
     { to: "winners", label: "Past Winners" },
     { to: "team", label: "Team" },
-  ];
+  ]; 
 
   return (
     <header className="relative min-h-screen bg-gradient-to-br from-slate-950 via-slate-900 to-emerald-950">
@@ -53,8 +53,8 @@ const Header = () => {
           <div className="flex items-center justify-between">
             <a href="/" className="relative group flex items-center gap-3">
               <img
-                className="h-8 w-auto transform group-hover:scale-105 transition-all duration-300"
-                src="/assets/images/Solace-Logo-2025-Green.svg"
+                className="h-8 w-auto transform group-hover:scale-125 transition-all duration-300"
+                src="/assets/images/Solace-Logo-2025-White.svg"
                 alt="Solace"
               />
               <span
@@ -229,7 +229,7 @@ const Header = () => {
             {/* Pure Solly with adjusted positioning */}
             <div className="animate-smooth-float transform lg:translate-x-8">
               <img
-                src="/assets/images/solly2.png"
+                src="/assets/images/Solly_AI.png"
                 alt="Solly the mascot"
                 className="relative drop-shadow-[0_0_15px_rgba(16,185,129,0.15)]"
               />
