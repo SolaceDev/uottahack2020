@@ -54,7 +54,7 @@ const Header = () => {
             <a href="/" className="relative group flex items-center gap-3">
               <img
                 className="h-8 w-auto transform group-hover:scale-105 transition-all duration-300"
-                src="/assets/images/solace.svg"
+                src="/assets/images/Solace-Logo-2025-Green.svg"
                 alt="Solace"
               />
               <span
