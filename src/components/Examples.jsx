@@ -72,7 +72,7 @@ const Examples = () => {
           {/* Quick Start Guide - Updated */}
           <div className="lg:col-span-3 mb-12">
             <a
-              href="https://solacelabs.github.io/solace-agent-mesh/docs/documentation/getting-started/"
+              href="https://github.com/SolaceDev/solace-agent-mesh-railway-quickstart"
               className="group relative block bg-gradient-to-r from-slate-800 to-slate-900 rounded-2xl p-8 shadow-lg hover:shadow-2xl border border-slate-700/50 backdrop-blur-sm transform hover:-translate-y-1 transition-all duration-500 overflow-hidden"
             >
               <div className="absolute inset-0 bg-gradient-to-r from-emerald-500/10 to-blue-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
@@ -99,9 +99,8 @@ const Examples = () => {
                   Getting Started With Solace Agent Mesh
                 </h3>
                 <p className="text-slate-400 text-lg mb-6">
-                  Complete beginner? Start here! This guide will teach you the
-                  basics of Solace Agent Mesh and help you get your first
-                  application running. Don't miss our workshop with Mohamed Radwan
+                  Complete beginner? Start here! This guide will teach how to deploy
+                  Solace Agent Mesh on Railway. Don't miss our workshop with Mohamed Radwan
                   on Saturday at 2:00PM in CRX C240!
                 </p>
                 <div className="flex items-center text-emerald-400 font-medium">
