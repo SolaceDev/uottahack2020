@@ -43,6 +43,7 @@ const Competition = () => {
 
               {/* Steps */}
               <div className="p-6 space-y-8">
+
                 {/* Step 1 */}
                 <div className="flex items-start gap-6 group">
                   <div
@@ -51,45 +52,6 @@ const Competition = () => {
                                 group-hover:bg-emerald-200 group-hover:scale-110"
                   >
                     1
-                  </div>
-                  <div className="flex-grow">
-                    <h4 className="font-semibold text-xl mb-2">
-                      Create a Solace Cloud Account
-                    </h4>
-                    <p className="text-slate-600 mb-3">
-                      Sign up for a free Solace Cloud account using your
-                      university email
-                    </p>
-                    <a
-                      href="https://console.solace.cloud/login/new-account"
-                      className="inline-flex items-center text-emerald-600 hover:text-emerald-700 font-medium group"
-                    >
-                      Create Account
-                      <svg
-                        className="w-4 h-4 ml-2 transform transition-transform duration-300 group-hover:translate-x-1"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke="currentColor"
-                      >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth={2}
-                          d="M14 5l7 7m0 0l-7 7m7-7H3"
-                        />
-                      </svg>
-                    </a>
-                  </div>
-                </div>
-
-                {/* Step 2 */}
-                <div className="flex items-start gap-6 group">
-                  <div
-                    className="flex-shrink-0 w-10 h-10 rounded-full bg-emerald-100 flex items-center justify-center 
-                                text-emerald-600 font-bold text-lg transition-all duration-300 
-                                group-hover:bg-emerald-200 group-hover:scale-110"
-                  >
-                    2
                   </div>
                   <div className="flex-grow">
                     <h4 className="font-semibold text-xl mb-2">
@@ -120,14 +82,14 @@ const Competition = () => {
                   </div>
                 </div>
 
-                {/* Step 3 */}
+                {/* Step 2 */}
                 <div className="flex items-start gap-6 group">
                   <div
                     className="flex-shrink-0 w-10 h-10 rounded-full bg-emerald-100 flex items-center justify-center 
                                 text-emerald-600 font-bold text-lg transition-all duration-300 
                                 group-hover:bg-emerald-200 group-hover:scale-110"
                   >
-                    3
+                    2
                   </div>
                   <div>
                     <h4 className="font-semibold text-xl mb-2">
@@ -301,20 +263,16 @@ const Competition = () => {
             </h3>
             <div className="space-y-4 text-slate-600">
               <div className="space-y-4">
-                <p className="font-semibold">
-                  Your hack will be assessed on the following criteria:
+                <p>
+                  Using Solace Agent Mesh, create an intelligent, event-driven, multi-agent AI system
+                  and use it to solve a real-world problem. Your team will design and implement an innovative
+                  application, leveraging the power of collaborative AI agents that communicate through events,
+                  demonstrating the future of scalable, distributed AI systems.
                 </p>
-                <ul className="list-disc pl-6 space-y-3">
-                  <li className="transition-all duration-300 hover:text-slate-800 hover:translate-x-1">
-                    It must include one or more custom AI agents in Solace Agent Mesh
-                  </li>
-                  <li className="transition-all duration-300 hover:text-slate-800 hover:translate-x-1">
-                    It must creatively solve a real-world problem
-                  </li>
-                  <li className="transition-all duration-300 hover:text-slate-800 hover:translate-x-1">
-                    It must use Solace Agent Mesh and its concepts effectively
-                  </li>
-                </ul>
+                <p className="font-semibold">
+                  Your submission will be assessed on creativity, innovation towards solving a real-world problem,
+                  and appropriate use of Agentic AI.
+                </p>
               </div>
 
               <div
