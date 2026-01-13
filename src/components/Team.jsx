@@ -4,7 +4,7 @@ const Team = () => {
   const teamMembers = [
     {
       name: "Ghaith Dalla-Ali",
-      role: "Software Development Director",
+      role: "Director, Agentic AI",
       image: "/assets/images/GhaithDallaAli.jpeg",
       social: {
         //linkedin: "https://www.linkedin.com/in/ghaith-dalla-ali/",
@@ -20,7 +20,7 @@ const Team = () => {
     },
         {
       name: "Stephanie Kaila",
-      role: "Employee Engagement Lead",
+      role: "Employee Engagement Manager",
       image: "/assets/images/StephanieKaila.jpg",
       social: {
         //linkedin: "https://www.linkedin.com/in/stephanie-kaila-b16275109/",
@@ -51,19 +51,19 @@ const Team = () => {
       },
     },
     {
+      name: "Samuel Gamelin",
+      role: "Senior Software Developer",
+      image: "/assets/images/SamuelGamelin.jpg",
+      social: {
+        //linkedin: "https://www.linkedin.com/in/-sg/",
+      },
+    },
+    {
       name: "Michelle Thomas",
       role: "Principal Technical Writer",
       image: "/assets/images/MichelleThomas.jpg",
       social: {
         //linkedin: "https://www.linkedin.com/in/michelle-thomas-644b9023//",
-      },
-    },
-    {
-      name: "Samuel Gamelin",
-      role: "Software Developer",
-      image: "/assets/images/SamuelGamelin.jpg",
-      social: {
-        //linkedin: "https://www.linkedin.com/in/-sg/",
       },
     },
     {

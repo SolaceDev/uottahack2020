@@ -55,6 +55,44 @@ const Competition = () => {
                   </div>
                   <div className="flex-grow">
                     <h4 className="font-semibold text-xl mb-2">
+                      Discover Agent Mesh
+                    </h4>
+                    <p className="text-slate-600 mb-3">
+                      Learn About the Basics of Agent Mesh.
+                    </p>
+                    <a
+                      href="https://solacelabs.github.io/solace-agent-mesh/docs/documentation/getting-started/introduction/"
+                      className="inline-flex items-center text-emerald-600 hover:text-emerald-700 font-medium group"
+                    >
+                      Learning About Agent Mesh
+                      <svg
+                        className="w-4 h-4 ml-2 transform transition-transform duration-300 group-hover:translate-x-1"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth={2}
+                          d="M14 5l7 7m0 0l-7 7m7-7H3"
+                        />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+
+                {/* Step 2 */}
+                <div className="flex items-start gap-6 group">
+                  <div
+                    className="flex-shrink-0 w-10 h-10 rounded-full bg-emerald-100 flex items-center justify-center
+                                text-emerald-600 font-bold text-lg transition-all duration-300
+                                group-hover:bg-emerald-200 group-hover:scale-110"
+                  >
+                    2
+                  </div>
+                  <div className="flex-grow">
+                    <h4 className="font-semibold text-xl mb-2">
                       Quickstart with Railway
                     </h4>
                     <p className="text-slate-600 mb-3">
@@ -82,14 +120,14 @@ const Competition = () => {
                   </div>
                 </div>
 
-                {/* Step 2 */}
+                {/* Step 3 */}
                 <div className="flex items-start gap-6 group">
                   <div
                     className="flex-shrink-0 w-10 h-10 rounded-full bg-emerald-100 flex items-center justify-center
                                 text-emerald-600 font-bold text-lg transition-all duration-300
                                 group-hover:bg-emerald-200 group-hover:scale-110"
                   >
-                    2
+                    3
                   </div>
                   <div>
                     <h4 className="font-semibold text-xl mb-2">
@@ -120,14 +158,14 @@ const Competition = () => {
                   </div>
                 </div>
 
-                {/* Step 3 */}
+                {/* Step 4 */}
                 <div className="flex items-start gap-6 group">
                   <div
                     className="flex-shrink-0 w-10 h-10 rounded-full bg-emerald-100 flex items-center justify-center
                                 text-emerald-600 font-bold text-lg transition-all duration-300
                                 group-hover:bg-emerald-200 group-hover:scale-110"
                   >
-                    3
+                    4
                   </div>
                   <div>
                     <h4 className="font-semibold text-xl mb-2">
@@ -158,14 +196,14 @@ const Competition = () => {
                   </div>
                 </div>
 
-                {/* Step 4 */}
+                {/* Step 5 */}
                 <div className="flex items-start gap-6 group">
                   <div
                     className="flex-shrink-0 w-10 h-10 rounded-full bg-emerald-100 flex items-center justify-center
                                 text-emerald-600 font-bold text-lg transition-all duration-300
                                 group-hover:bg-emerald-200 group-hover:scale-110"
                   >
-                    4
+                    5
                   </div>
                   <div>
                     <h4 className="font-semibold text-xl mb-2">

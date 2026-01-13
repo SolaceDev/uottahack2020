@@ -3,18 +3,19 @@ import React from "react";
 const PastWinners = () => {
   const winners = [
     {
-      title: "The Box",
-      image: "assets/images/smartbox3-225x300.png",
-      description: "Leveraging Solace PubSub+ to Power a Smart Delivery System",
-      blogLink: "https://solace.com/blog/uottahack3-smart-delivery-system/",
+      title: "uOttaType (2025)",
+      image: "assets/images/uottatype.png",
+      description: "Leveraging Solace Event Broker for Real-Time Collaborative Document Editing",
+      blogLink: "https://solace.com/blog/winning-uottahack-7/",
       team: [
-        { image: "assets/images/zach-bys-150x150.jpg", name: "Zach" },
-        { image: "assets/images/jay-wreh-150x150.jpg", name: "Jay" },
-        { image: "assets/images/derek-yu-150x150.jpg", name: "Derek" },
+        { image: "assets/images/matthew_polak.jpg", name: "Matthew" },
+        { image: "assets/images/raef_sarofiem.png", name: "Raef" },
+        { image: "assets/images/robert_zuchniak.png", name: "Robert" },
+        { image: "assets/images/vasil_topalovic.png", name: "Vasil" },
       ],
     },
     {
-      title: "AmbuPlus",
+      title: "AmbuPlus (2021)",
       image: "assets/images/ambuplus.png",
       description: "Leveraging Solace PubSub+ for Real-Time Ambulance Tracking",
       blogLink:
@@ -27,15 +28,14 @@ const PastWinners = () => {
       ],
     },
     {
-      title: "uOttaType",
-      image: "assets/images/uottatype.png",
-      description: "Leveraging Solace Event Broker for Real-Time Collaborative Document Editing",
-      blogLink: "https://solace.com/blog/winning-uottahack-7/",
+      title: "The Box (2020)",
+      image: "assets/images/smartbox3-225x300.png",
+      description: "Leveraging Solace PubSub+ to Power a Smart Delivery System",
+      blogLink: "https://solace.com/blog/uottahack3-smart-delivery-system/",
       team: [
-        { image: "assets/images/matthew_polak.jpg", name: "Matthew" },
-        { image: "assets/images/raef_sarofiem.png", name: "Raef" },
-        { image: "assets/images/robert_zuchniak.png", name: "Robert" },
-        { image: "assets/images/vasil_topalovic.png", name: "Vasil" },
+        { image: "assets/images/zach-bys-150x150.jpg", name: "Zach" },
+        { image: "assets/images/jay-wreh-150x150.jpg", name: "Jay" },
+        { image: "assets/images/derek-yu-150x150.jpg", name: "Derek" },
       ],
     },
   ];
