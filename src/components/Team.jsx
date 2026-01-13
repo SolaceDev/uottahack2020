@@ -4,13 +4,21 @@ const Team = () => {
   const teamMembers = [
     {
       name: "Ghaith Dalla-Ali",
-      role: "Director, Engineering",
+      role: "Software Development Director",
       image: "/assets/images/GhaithDallaAli.jpeg",
       social: {
         //linkedin: "https://www.linkedin.com/in/ghaith-dalla-ali/",
       },
     },
     {
+      name: "James Ellwood",
+      role: "Director, Engineering Platform",
+      image: "/assets/images/JamesEllwood.jpg",
+      social: {
+        //linkedin: "https://www.linkedin.com/in/james-ellwood-18634972/",
+      },
+    },
+        {
       name: "Stephanie Kaila",
       role: "Employee Engagement Lead",
       image: "/assets/images/StephanieKaila.jpg",
@@ -19,25 +27,17 @@ const Team = () => {
       },
     },
     {
-      name: "Dishant Langayan",
-      role: "VP, Professional Services",
-      image: "/assets/images/DishantLangayan.jpg",
+      name: "Julina Throop",
+      role: "Senior Corporate Recruiter",
+      image: "/assets/images/JulinaThroop.jpg",
       social: {
-        //linkedin: "https://www.linkedin.com/in/dishantlangayan/",
+      // linkedin: "https://www.linkedin.com/in/julinathroop/", 
       },
     },
     {
-      name: "Andrea Ross",
-      role: "Manager, Engineering",
-      image: "/assets/images/AndreaRoss.png",
-      social: {
-        //linkedin: "https://www.linkedin.com/in/aross/",
-      },
-    },
-    {
-      name: "Michael Cardy",
-      role: "Senior Architect",
-      image: "/assets/images/MichaelCardy.jpg",
+      name: "Greg Meldrum",
+      role: "Senior Principal Developer",
+      image: "/assets/images/GregMeldrum.jpg",
       social: {
         //linkedin: "https://www.linkedin.com/in/mcardy/",
       },
@@ -52,10 +52,18 @@ const Team = () => {
     },
     {
       name: "Mohamed Radwan",
-      role: "Software Developer",
+      role: "Senior Software Developer",
       image: "/assets/images/MohamedRadwan.jpg",
       social: {
         //linkedin: "https://www.linkedin.com/in/mradwan9/",
+      },
+    },
+    {
+      name: "Michelle Thomas",
+      role: "Principal Technical Writer",
+      image: "/assets/images/MichelleThomas.jpg",
+      social: {
+        //linkedin: "https://www.linkedin.com/in/michelle-thomas-644b9023//",
       },
     },
     {
@@ -82,12 +90,7 @@ const Team = () => {
         //linkedin: "https://www.linkedin.com/in/jack-clarke0/",
       },
     },
-    {
-      name: "Alireza Parvizimosaed",
-      role: "Senior Software Designer - AI Integration",
-      image: "/assets/images/AlirezaParvizimosaed.png",
-      //social: {},
-    },
+
     {
       name: "Cyrus Mobini",
       role: "Software Engineer - AI Integration",
@@ -97,19 +100,27 @@ const Team = () => {
       },
     },
     {
-      name: "Prakrut Upadhyay",
-      role: "Technical Customer Support Engineer",
-      image: "/assets/images/PrakrutUpadhyay.png",
+      name: "Juanita Rodelo",
+      role: "Software Developer",
+      image: "/assets/images/JuanitaRodelo.jpg",
       social: {
-        //linkedin: "https://www.linkedin.com/in/prakrut99/",
+        //linkedin: "https://www.linkedin.com/in/juanita-rodelo/",
       },
     },
     {
-      name: "Rabih Daoud",
-      role: "Business Operations Analyst",
-      image: "/assets/images/RabihDaoud.jpg",
+      name: "Wajiha Maryam",
+      role: "Software Developer",
+      image: "/assets/images/WajihaMaryam.jpg",
       social: {
-        //linkedin: "https://www.linkedin.com/in/rabihdaoud/",
+        //linkedin: "https://www.linkedin.com/in/syeda-wajiha-maryam/",
+      },
+    },
+        {
+      name: "Abdullah Ramadan",
+      role: "Quality Assurance Engineer - Co-op Student",
+      image: "/assets/images/AbdullahRamadan.jpg",
+      social: {
+        //linkedin: "https://www.linkedin.com/in/abdullahrama/",
       },
     },
   ];

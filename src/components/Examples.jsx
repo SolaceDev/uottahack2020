@@ -3,44 +3,46 @@ import React from "react";
 const Examples = () => {
   const examples = [
     {
-      href: "https://github.com/thrillstone/solace-react-paho-example",
-      icon: "assets/images/react.svg",
-      title: "React with Paho MQTT",
+      href: "https://solacelabs.github.io/solace-agent-mesh/docs/documentation/developing/tutorials/custom-agent",
+      icon: "assets/images/agent.png",
+      title: "Build Your Own Agent",
       description:
-        "A React application using Paho MQTT that connects to Solace Cloud and publishes a message, receives the message through a subscription and displays it on the screen.",
+        "Learn how to construct a sophisticated custom agent using the Solace Agent Mesh framework. This tutorial covers external API integration, service layer architecture, lifecycle management, and artifact creation through a practical weather application example.",
     },
     {
-      href: "https://github.com/gregmeldrum/solace-express-mqtt-example",
-      icon: "assets/images/node.svg",
-      title: "Node.js and Express with Paho MQTT",
+      href: "https://solacelabs.github.io/solace-agent-mesh/docs/documentation/developing/tutorials/mcp-integration",
+      icon: "assets/images/mcp.png",
+      title: "MCP Integration",
       description:
-        "An Expresss server in Node.js that connects to Solace PubSub+ cloud via MQTT. Use REST APIs to subscribe and publish messages.",
+        "Integrate Model Context Protocol (MCP) servers into Agent Mesh agents. This tutorial covers setting up the environment, configuring various connection types (stdio, SSE, StreamableHTTP, and Docker), filtering available tools, and testing MCP-enabled agents.",
     },
     {
-      href: "https://github.com/ghaithdallaali/solace-kotlin-android-paho-example",
-      icon: "assets/images/android.svg",
-      title: "Android app in Kotlin with Paho MQTT",
+      href: "https://solacelabs.github.io/solace-agent-mesh/docs/documentation/developing/tutorials/sql-database",
+      icon: "assets/images/database.png",
+      title: "SQL Database Integration",
       description:
-        "A Kotlin-based android application using Paho MQTT that connects toSolace Cloud and publishes a message, receives the message through a subscription and displays it on the screen.",
+        "Configure a SQL database agent within Agent Mesh that can interpret natural language queries and convert them into SQL commands. Includes step-by-step guidance for connecting to databases like SQLite, MySQL, or PostgreSQL with sample coffee shop data.",
     },
     {
-      href: "https://github.com/j-setiawan/solace-python-mqtt-example",
-      icon: "assets/images/python.svg",
-      title: "A Python application using Paho MQTT",
-      description: "A Python application using the PAHO MQTT API.",
+      href: "https://solacelabs.github.io/solace-agent-mesh/docs/documentation/developing/tutorials/mongodb-integration",
+      icon: "assets/images/mongodb.png",
+      title: "MongoDB Integration",
+      description:
+        "Set up a MongoDB agent within Agent Mesh that translates user questions into MongoDB aggregation pipelines and executes them against your database. This tutorial covers plugin installation, database configuration, and natural language query capabilities.",
     },
     {
-      href: "https://github.com/thrillstone/solace-chrome-extension",
-      icon: "assets/images/chrome.png",
-      title: "Chrome extension using Paho MQTT",
+      href: "https://solacelabs.github.io/solace-agent-mesh/docs/documentation/developing/tutorials/rag-integration",
+      icon: "assets/images/rag.png",
+      title: "RAG Integration",
       description:
-        "Building a chrome extension and want to use Solace messaging? This repo gives you the blueprint to includ paho in your extension and start receiving messages.",
+        "Configure and deploy the Agent Mesh RAG plugin, enabling agents to retrieve information from document knowledge bases and generate context-aware answers. This tutorial covers document scanning, text preprocessing, vector embeddings, and retrieval-augmented generation workflows.",
     },
     {
-      href: "https://tutorials.solace.dev/",
-      title: "Solace Tutorials",
+      href: "https://solacelabs.github.io/solace-agent-mesh/docs/documentation/developing/tutorials/slack-integration",
+      icon: "assets/images/slack.png",
+      title: "Slack Integration",
       description:
-        "Want to use a language or client library not in the examples above? Check out the full suite of Solace Tutorials that includes all of our supported client library frameworks and more advanced examples of integrating with the PubSub+ Event Broker.",
+        "Integrate a Slack interface into Agent Mesh, allowing users to interact with the system directly from Slack workspaces and channels. This tutorial covers creating a Slack application, configuring authentication tokens, installing the Slack gateway, and testing the setup.",
     },
   ];
 
@@ -62,8 +64,7 @@ const Examples = () => {
             Start Building Now
           </h2>
           <p className="text-slate-400 text-lg md:text-xl leading-relaxed max-w-3xl mx-auto mt-6">
-            Jump-start your project with our curated examples. Each example
-            includes full source code and step-by-step instructions.
+            Jump-start your project with our curated examples. Each example includes full source code and step-by-step instructions.
           </p>
         </div>
 
@@ -71,7 +72,7 @@ const Examples = () => {
           {/* Quick Start Guide - Updated */}
           <div className="lg:col-span-3 mb-12">
             <a
-              href="https://www.solace.dev/"
+              href="https://github.com/SolaceDev/solace-agent-mesh-railway-quickstart"
               className="group relative block bg-gradient-to-r from-slate-800 to-slate-900 rounded-2xl p-8 shadow-lg hover:shadow-2xl border border-slate-700/50 backdrop-blur-sm transform hover:-translate-y-1 transition-all duration-500 overflow-hidden"
             >
               <div className="absolute inset-0 bg-gradient-to-r from-emerald-500/10 to-blue-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
@@ -95,13 +96,12 @@ const Examples = () => {
                   </span>
                 </div>
                 <h3 className="text-3xl font-bold text-slate-200 mb-4">
-                  Quick Start Guide
+                  Getting Started With Solace Agent Mesh
                 </h3>
                 <p className="text-slate-400 text-lg mb-6">
-                  Complete beginner? Start here! This guide will teach you the
-                  basics of event-driven architecture and get your first
-                  application running. Don't miss our workshop with Dishant
-                  Langayan on Saturday at 12:30 PM in CRX C-140!
+                  Complete beginner? Start here! This guide will teach how to deploy
+                  Solace Agent Mesh on Railway. Don't miss our workshop with Mohamed Radwan
+                  on Saturday at 2:00PM in CRX C240!
                 </p>
                 <div className="flex items-center text-emerald-400 font-medium">
                   <span>Start Learning</span>
