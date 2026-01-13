@@ -28,7 +28,7 @@ const Competition = () => {
           {/* Left Column - Steps */}
           <div className="md:col-span-7 lg:col-span-8 h-full">
             <div
-              className="bg-white/80 backdrop-blur-sm rounded-xl shadow-lg divide-y divide-slate-200 h-full 
+              className="bg-white/80 backdrop-blur-sm rounded-xl shadow-lg divide-y divide-slate-200 h-full
                           transform transition-all duration-300 hover:shadow-xl hover:-translate-y-1"
             >
               {/* Header */}
@@ -37,7 +37,7 @@ const Competition = () => {
                   How to Join
                 </h3>
                 <p className="mt-2 text-slate-600">
-                  Follow these steps to participate in the challenge
+                  Follow these steps to participate in the challenge.
                 </p>
               </div>
 
@@ -47,24 +47,24 @@ const Competition = () => {
                 {/* Step 1 */}
                 <div className="flex items-start gap-6 group">
                   <div
-                    className="flex-shrink-0 w-10 h-10 rounded-full bg-emerald-100 flex items-center justify-center 
-                                text-emerald-600 font-bold text-lg transition-all duration-300 
+                    className="flex-shrink-0 w-10 h-10 rounded-full bg-emerald-100 flex items-center justify-center
+                                text-emerald-600 font-bold text-lg transition-all duration-300
                                 group-hover:bg-emerald-200 group-hover:scale-110"
                   >
                     1
                   </div>
                   <div className="flex-grow">
                     <h4 className="font-semibold text-xl mb-2">
-                      Register Your Team
+                      Quickstart with Railway
                     </h4>
                     <p className="text-slate-600 mb-3">
-                      Submit your team's details through our registration form
+                      Deploy Solace Agent Mesh on Railway with custom agents.
                     </p>
                     <a
-                      href="https://forms.office.com/r/hyHREY7ZVh?embed=true"
+                      href="https://github.com/SolaceDev/solace-agent-mesh-railway-quickstart"
                       className="inline-flex items-center text-emerald-600 hover:text-emerald-700 font-medium group"
                     >
-                      Register Team
+                      Solace Agent Mesh Quickstart with Railway
                       <svg
                         className="w-4 h-4 ml-2 transform transition-transform duration-300 group-hover:translate-x-1"
                         fill="none"
@@ -85,19 +85,95 @@ const Competition = () => {
                 {/* Step 2 */}
                 <div className="flex items-start gap-6 group">
                   <div
-                    className="flex-shrink-0 w-10 h-10 rounded-full bg-emerald-100 flex items-center justify-center 
-                                text-emerald-600 font-bold text-lg transition-all duration-300 
+                    className="flex-shrink-0 w-10 h-10 rounded-full bg-emerald-100 flex items-center justify-center
+                                text-emerald-600 font-bold text-lg transition-all duration-300
                                 group-hover:bg-emerald-200 group-hover:scale-110"
                   >
                     2
                   </div>
                   <div>
                     <h4 className="font-semibold text-xl mb-2">
+                      Configure LLMs
+                    </h4>
+                    <p className="text-slate-600 mb-3">
+                      Set Up and Configure LLMs with Solace Agent Mesh (SAM).
+                    </p>
+                    <a
+                      href="<link TBD>"
+                      className="inline-flex items-center text-emerald-600 hover:text-emerald-700 font-medium group"
+                    >
+                      Configuring LLMs with Solace Agent Mesh
+                      <svg
+                        className="w-4 h-4 ml-2 transform transition-transform duration-300 group-hover:translate-x-1"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth={2}
+                          d="M14 5l7 7m0 0l-7 7m7-7H3"
+                        />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+
+                {/* Step 3 */}
+                <div className="flex items-start gap-6 group">
+                  <div
+                    className="flex-shrink-0 w-10 h-10 rounded-full bg-emerald-100 flex items-center justify-center
+                                text-emerald-600 font-bold text-lg transition-all duration-300
+                                group-hover:bg-emerald-200 group-hover:scale-110"
+                  >
+                    3
+                  </div>
+                  <div>
+                    <h4 className="font-semibold text-xl mb-2">
+                      Get Set Up for Vibe Coding
+                    </h4>
+                    <p className="text-slate-600 mb-3">
+                      Set Up context7 and for Vibe Coding with Solace Agent Mesh.
+                    </p>
+                    <a
+                      href="<link TBD>"
+                      className="inline-flex items-center text-emerald-600 hover:text-emerald-700 font-medium group"
+                    >
+                      Set Up context7 for Vibe Coding
+                      <svg
+                        className="w-4 h-4 ml-2 transform transition-transform duration-300 group-hover:translate-x-1"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth={2}
+                          d="M14 5l7 7m0 0l-7 7m7-7H3"
+                        />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+
+                {/* Step 4 */}
+                <div className="flex items-start gap-6 group">
+                  <div
+                    className="flex-shrink-0 w-10 h-10 rounded-full bg-emerald-100 flex items-center justify-center
+                                text-emerald-600 font-bold text-lg transition-all duration-300
+                                group-hover:bg-emerald-200 group-hover:scale-110"
+                  >
+                    4
+                  </div>
+                  <div>
+                    <h4 className="font-semibold text-xl mb-2">
                       Start Hacking
                     </h4>
                     <p className="text-slate-600">
-                      Check out the quick start resources below to kickstart
-                      your hack
+                      Use your creativity and technical skills to build an innovative
+                      agentic AI solution that leverages Solace Agent Mesh.
                     </p>
                   </div>
                 </div>
@@ -108,8 +184,8 @@ const Competition = () => {
           {/* Right Column - Workshop Card */}
           <div className="md:col-span-5 lg:col-span-4 h-full">
             <div
-              className="bg-gradient-to-br from-emerald-50 to-blue-50 rounded-xl shadow-lg border border-emerald-100 
-                          overflow-hidden h-full flex flex-col transform transition-all duration-300 
+              className="bg-gradient-to-br from-emerald-50 to-blue-50 rounded-xl shadow-lg border border-emerald-100
+                          overflow-hidden h-full flex flex-col transform transition-all duration-300
                           hover:shadow-xl hover:-translate-y-1"
             >
               <div className="relative h-32 bg-gradient-to-r from-emerald-600 to-blue-600 flex-shrink-0">
@@ -138,7 +214,7 @@ const Competition = () => {
                 <div className="space-y-3 flex-grow">
                   <div
                     className="flex items-center gap-3 bg-white/50 p-3 rounded-lg transition-all duration-300
-                              hover:bg-white/80 hover:shadow-md"
+                                hover:bg-white/80 hover:shadow-md"
                   >
                     <svg
                       className="w-5 h-5 text-emerald-500"
@@ -160,7 +236,7 @@ const Competition = () => {
 
                   <div
                     className="flex items-center gap-3 bg-white/50 p-3 rounded-lg transition-all duration-300
-                              hover:bg-white/80 hover:shadow-md"
+                                hover:bg-white/80 hover:shadow-md"
                   >
                     <svg
                       className="w-5 h-5 text-emerald-500"
