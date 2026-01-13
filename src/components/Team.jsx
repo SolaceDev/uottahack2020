@@ -35,19 +35,11 @@ const Team = () => {
       },
     },
     {
-      name: "Greg Meldrum",
-      role: "Senior Principal Developer",
-      image: "/assets/images/GregMeldrum.jpg",
-      social: {
-        //linkedin: "https://www.linkedin.com/in/mcardy/",
-      },
-    },
-    {
       name: "Gabor Szokoli",
       role: "Senior Software Developer",
       image: "/assets/images/GaborSzokoli.jpg",
       social: {
-        //linkedin: "https://www.linkedin.com/in/gabor-szokoli-25a16011/",
+        //linkedin: "https://ca.linkedin.com/in/gabor-szokoli-25a16011",
       },
     },
     {
@@ -83,44 +75,28 @@ const Team = () => {
       },
     },
     {
-      name: "Jack Clarke",
-      role: "Software Developer",
-      image: "/assets/images/JackClarke.jpg",
-      social: {
-        //linkedin: "https://www.linkedin.com/in/jack-clarke0/",
-      },
-    },
-
-    {
-      name: "Cyrus Mobini",
-      role: "Software Engineer - AI Integration",
-      image: "/assets/images/CyrusMobini.png",
-      social: {
-        //linkedin: "https://www.linkedin.com/in/cyrusmobini/",
-      },
-    },
-    {
-      name: "Juanita Rodelo",
-      role: "Software Developer",
-      image: "/assets/images/JuanitaRodelo.jpg",
-      social: {
-        //linkedin: "https://www.linkedin.com/in/juanita-rodelo/",
-      },
-    },
-    {
-      name: "Wajiha Maryam",
-      role: "Software Developer",
-      image: "/assets/images/WajihaMaryam.jpg",
-      social: {
-        //linkedin: "https://www.linkedin.com/in/syeda-wajiha-maryam/",
-      },
-    },
-        {
       name: "Abdullah Ramadan",
       role: "Quality Assurance Engineer - Co-op Student",
       image: "/assets/images/AbdullahRamadan.jpg",
       social: {
         //linkedin: "https://www.linkedin.com/in/abdullahrama/",
+      },
+    },
+
+    {
+      name: "Maryam Lim-Baig",
+      role: "Junior Developer Advocate - Co-op Student",
+      image: "/assets/images/maryam_lim-baig.jpg",
+      social: {
+        //linkedin: "",
+      },
+    },
+    {
+      name: "Reuben D'Souza",
+      role: "Software Developer - Co-op Student",
+      image: "/assets/images/reuben_d'souza.jpg",
+      social: {
+        //linkedin: "https://ca.linkedin.com/in/reubenjds",
       },
     },
   ];

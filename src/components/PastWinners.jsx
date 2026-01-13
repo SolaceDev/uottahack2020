@@ -26,6 +26,18 @@ const PastWinners = () => {
         { image: "assets/images/sandipan.jpg", name: "Sandipan" },
       ],
     },
+    {
+      title: "uOttaType",
+      image: "assets/images/uottatype.png",
+      description: "Leveraging Solace Event Broker for Real-Time Collaborative Document Editing",
+      blogLink: "https://solace.com/blog/winning-uottahack-7/",
+      team: [
+        { image: "assets/images/matthew_polak.jpg", name: "Matthew" },
+        { image: "assets/images/raef_sarofiem.png", name: "Raef" },
+        { image: "assets/images/robert_zuchniak.png", name: "Robert" },
+        { image: "assets/images/vasil_topalovic.png", name: "Vasil" },
+      ],
+    },
   ];
 
   return (
@@ -50,11 +62,11 @@ const PastWinners = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-8 lg:gap-12">
+        <div className="grid md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-8 lg:gap-12 justify-items-center">
           {winners.map((winner, index) => (
             <div
               key={index}
-              className="group p-8 bg-white/80 backdrop-blur-sm rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-1"
+              className="group p-8 bg-white/80 backdrop-blur-sm rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-1 w-full max-w-md xl:max-w-none"
             >
               <div className="relative aspect-video overflow-hidden rounded-xl mb-8">
                 <img

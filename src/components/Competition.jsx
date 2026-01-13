@@ -361,6 +361,9 @@ const Competition = () => {
                 <p className="text-emerald-700">
                   Visit our booth or reach out on Discord for assistance!
                 </p>
+                <a href="https://discord.com/invite/2RkURJQpyE" target="_blank" rel="noopener noreferrer" className="text-emerald-700 underline">
+                  Join our Discord
+                </a>
               </div>
             </div>
           </div>
