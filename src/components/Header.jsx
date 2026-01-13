@@ -30,7 +30,7 @@ const Header = () => {
     { to: "quickstart", label: "Quick Start" },
     { to: "winners", label: "Past Winners" },
     { to: "team", label: "Team" },
-  ];
+  ]; 
 
   return (
     <header className="relative min-h-screen bg-gradient-to-br from-slate-950 via-slate-900 to-emerald-950">
@@ -53,8 +53,8 @@ const Header = () => {
           <div className="flex items-center justify-between">
             <a href="/" className="relative group flex items-center gap-3">
               <img
-                className="h-8 w-auto transform group-hover:scale-105 transition-all duration-300"
-                src="/assets/images/solace.svg"
+                className="h-8 w-auto transform group-hover:scale-125 transition-all duration-300"
+                src="/assets/images/Solace-Logo-2025-White.svg"
                 alt="Solace"
               />
               <span
@@ -62,7 +62,7 @@ const Header = () => {
                   isScrolled ? "opacity-100 translate-x-0" : ""
                 }`}
               >
-                uOttaHack 7
+                uOttaHack 8
               </span>
             </a>
 
@@ -180,23 +180,23 @@ const Header = () => {
           <div className="lg:col-span-1 xl:pr-12 space-y-8 animate-fade-in relative z-20">
             <div className="flex items-center gap-4 mb-6">
               <span className="px-4 py-1 rounded-full bg-emerald-500/10 text-emerald-400 text-sm font-medium">
-                Win $1000 in Amazon Gift Cards
+                Win Amazing Prizes!
               </span>
               <div className="h-2 w-2 rounded-full bg-emerald-400 animate-pulse"></div>
             </div>
 
             <h1 className="text-5xl lg:text-6xl font-bold leading-tight">
-              <span className="text-white">Build Real-Time</span>
+              <span className="text-white">Build Agentic AI</span>
               <br />
               <span className="bg-gradient-to-r from-emerald-400 via-teal-400 to-blue-500 bg-clip-text text-transparent">
-                Event-Driven Apps
+                Applications
               </span>
             </h1>
 
             <p className="text-white/90 text-xl leading-relaxed">
-              Join the Solace Challenge at uOttaHack 7. Create real-time
-              event-driven applications, learn modern architecture patterns, and
-              compete for $1000 in prizes!
+              Join the Solace Challenge at uOttaHack 8. Create agentic AI
+              applications, learn modern architecture patterns, and
+              compete for cool prizes!
             </p>
 
             <div className="flex gap-4 pt-4">
@@ -229,7 +229,7 @@ const Header = () => {
             {/* Pure Solly with adjusted positioning */}
             <div className="animate-smooth-float transform lg:translate-x-8">
               <img
-                src="/assets/images/solly2.png"
+                src="/assets/images/Solly_AI.png"
                 alt="Solly the mascot"
                 className="relative drop-shadow-[0_0_15px_rgba(16,185,129,0.15)]"
               />

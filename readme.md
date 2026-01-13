@@ -26,21 +26,20 @@
 
 ### Run development server
 
-> Run `npm run dev` for a dev server. Navigate to `http://localhost:8080/`.
+> Run `npm start` for a dev server. Navigate to `http://localhost:3000/`.
 > The app will automatically reload if you change any of the source files.
 
 ### Build
 
-> Run `npm run build:dev` to build the project in development mode.
-> Run `npm run build:prod` to build the project in production mode.
+> Run `npm run build` to build the project for production.
 
-The build artifacts will be stored in the `dist/` directory.
+The build artifacts will be stored in the `build/` directory.
 
 ### Deploy
 
 :warning: **This will deploy the target code to https://uottahack.solace.cloud/. Please test your work thoroughly beforehand.**
 
-1. Open a PE request to activate (if it's dormant) or create the AWS IAM user in production. Have them share its credentials with you (e.g. [https://sol-jira.atlassian.net/browse/DATAGO-72229](https://sol-jira.atlassian.net/browse/DATAGO-92450))
+1. Open a PE request to activate (if it's dormant) or create the AWS IAM user in production. Have them share its credentials with you (e.g. [https://sol-jira.atlassian.net/browse/DATAGO-92450](https://sol-jira.atlassian.net/browse/DATAGO-92450))
 2. Create a new AWS profile under `~/.aws/credentials` and name it `[uottahack]`. Add the credentials from the previous step to it
 
 ```
