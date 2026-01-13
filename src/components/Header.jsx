@@ -83,18 +83,7 @@ const Header = () => {
                   <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-emerald-400 transition-all duration-300 group-hover:w-full" />
                 </Link>
               ))}
-              <div className="h-6 w-px bg-slate-700" />
-              <a
-                href="https://solace.com/careers/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="px-6 py-2.5 rounded-lg bg-gradient-to-r from-emerald-500 to-blue-500 text-white font-medium text-sm 
-                hover:shadow-lg hover:shadow-emerald-500/25 transform hover:-translate-y-0.5 transition-all duration-300
-                relative overflow-hidden group"
-              >
-                <span className="relative z-10">Join Solace</span>
-                <div className="absolute inset-0 bg-gradient-to-r from-blue-500 to-emerald-500 transition-transform duration-300 translate-y-full group-hover:translate-y-0" />
-              </a>
+
             </div>
 
             {/* Mobile Menu Button */}
@@ -157,18 +146,7 @@ const Header = () => {
                   {item.label}
                 </Link>
               ))}
-              <div className="pt-4 flex flex-col gap-4">
-                <a
-                  href="https://solace.com/careers/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="block w-full py-3 text-center rounded-lg bg-gradient-to-r from-emerald-500 to-blue-500 text-white font-medium 
-                  hover:shadow-lg hover:shadow-emerald-500/25 transition-all duration-300"
-                  onClick={() => setIsMobileMenuOpen(false)}
-                >
-                  Join Solace
-                </a>
-              </div>
+
             </div>
           </div>
         </div>
