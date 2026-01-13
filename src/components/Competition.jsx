@@ -34,10 +34,10 @@ const Competition = () => {
               {/* Header */}
               <div className="p-6">
                 <h3 className="text-3xl font-bold text-slate-800">
-                  How to Join
+                  How to Start
                 </h3>
                 <p className="mt-2 text-slate-600">
-                  Follow these steps to participate in the challenge.
+                  Follow these steps to participate in the challenge. Some links will be updated shortly.
                 </p>
               </div>
 
@@ -405,6 +405,30 @@ const Competition = () => {
               </div>
             </div>
           </div>
+
+          {/* Sign-Up Card - Full Width */}
+          <div
+            className="md:col-span-12 bg-white/80 backdrop-blur-sm rounded-xl shadow-lg p-6
+                        transform transition-all duration-300 hover:shadow-xl hover:-translate-y-1"
+          >
+            <h3 className="text-2xl font-bold text-slate-800 mb-4">
+              Signing Up
+            </h3>
+            <div className="space-y-4 text-slate-600">
+              <div className="space-y-4">
+                <p>
+                  If you have not signed up yet, please join our discord and register for the hackathon. Find a team (or fly solo),
+                  and ensure you provide the organizers at least one team member's Discord ID.
+                </p>
+                <p className="font-semibold">
+                  Discord will be the primary form of communication, so even if a teammate has joined and signed up on behalf of the team,
+                  we encourage all team members to join.
+                </p>
+              </div>
+            </div>
+          </div>
+
+
         </div>
       </div>
     </section>
