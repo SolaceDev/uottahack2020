@@ -88,13 +88,13 @@ const Team = () => {
       role: "Junior Developer Advocate - Co-op Student",
       image: "/assets/images/maryam_lim-baig.jpg",
       social: {
-        //linkedin: "",
+        //linkedin: "http://linkedin.com/in/maryam-l-65a1701b7",
       },
     },
     {
       name: "Reuben D'Souza",
       role: "Software Developer - Co-op Student",
-      image: "/assets/images/reuben_d'souza.jpg",
+      image: "/assets/images/reuben_dsouza.jpg",
       social: {
         //linkedin: "https://ca.linkedin.com/in/reubenjds",
       },
