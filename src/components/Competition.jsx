@@ -37,7 +37,7 @@ const Competition = () => {
                   How to Start
                 </h3>
                 <p className="mt-2 text-slate-600">
-                  Follow these steps to participate in the challenge. Some links will be updated shortly.
+                  Follow these steps to participate in the challenge. Broken links will be updated shortly.
                 </p>
               </div>
 
@@ -418,7 +418,7 @@ const Competition = () => {
               <div className="space-y-4">
                 <p>
                   If you have not signed up yet, please join our discord and register for the hackathon. Find a team (or fly solo),
-                  and ensure you provide the organizers at least one team member's Discord ID.
+                  and ensure you provide the organizers with at least one team member's Discord ID.
                 </p>
                 <p className="font-semibold">
                   Discord will be the primary form of communication, so even if a teammate has joined and signed up on behalf of the team,
@@ -428,6 +428,33 @@ const Competition = () => {
             </div>
           </div>
 
+          {/* LiteLLM Keys - Full Width */}
+          <div
+            className="md:col-span-12 bg-white/80 backdrop-blur-sm rounded-xl shadow-lg p-6
+                        transform transition-all duration-300 hover:shadow-xl hover:-translate-y-1"
+          >
+            <h3 className="text-2xl font-bold text-slate-800 mb-4">
+              LLM Offerings
+            </h3>
+            <div className="space-y-4 text-slate-600">
+              <div className="space-y-4">
+                <p>
+                  <p className="font-semibold">Google Antigravity - Gemini 3 Pro (Recommended)</p>
+                  Antigravity is a Google-built IDE where you can use Gemini 3 Pro for coding tasks. To get access, 
+                  <a href="https://antigravity.google/" target="_blank" rel="noopener noreferrer" className="text-emerald-600 hover:text-emerald-700 hover:underline"> install Antigravity</a>
+                  , configure your settings, sign in with your Google account, open your repo, and select Gemini 3 Pro as the model
+                  (you'll have a limited free quota in preview, with higher limits if your account includes Google AI Pro). To get Google AI Pro for free for one month,
+                  <a href="https://gemini.google/students/" target="_blank" rel="noopener noreferrer" className="text-emerald-600 hover:text-emerald-700 hover:underline"> visit their site</a>,
+                  select "Start your trial", and upgrade your account. Don't forget to cancel the subscription before the month ends if you don't want to be charged.
+                </p>
+                <p> 
+                  <p className="font-semibold">Solace LiteLLM Keys</p>                 
+                  Solace is also offering free LiteLLM API keys to hackathon participants to help you get started with building your agentic AI solutions.
+                  These keys will only be valid during the hackathon period, and there are limited quantities available. 
+                </p>
+              </div>
+            </div>
+          </div>
 
         </div>
       </div>
