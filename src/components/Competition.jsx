@@ -58,7 +58,7 @@ const Competition = () => {
                       Discover Agent Mesh
                     </h4>
                     <p className="text-slate-600 mb-3">
-                      Learn About the Basics of Agent Mesh.
+                      Learn about the basics of Agent Mesh.
                     </p>
                     <a
                       href="https://solacelabs.github.io/solace-agent-mesh/docs/documentation/getting-started/introduction/"
@@ -93,16 +93,17 @@ const Competition = () => {
                   </div>
                   <div className="flex-grow">
                     <h4 className="font-semibold text-xl mb-2">
-                      Quickstart with Railway
+                      Set Up Your Environment
                     </h4>
                     <p className="text-slate-600 mb-3">
-                      Deploy Solace Agent Mesh on Railway with custom agents.
+                      Set up your hacking environment by visiting the resource page, scrolling down to the 'README' section, and following the setup instructions.
+                      You will receive LLM API access, learn how to run and deploy your project, set up your AI-assisted development, and view demo examples.
                     </p>
                     <a
-                      href="https://github.com/SolaceDev/solace-agent-mesh-railway-quickstart"
+                      href="https://github.com/SolaceDev/solace-agent-mesh-quickstart"
                       className="inline-flex items-center text-emerald-600 hover:text-emerald-700 font-medium group"
                     >
-                      Solace Agent Mesh Quickstart with Railway
+                      Setting Up Your Environment
                       <svg
                         className="w-4 h-4 ml-2 transform transition-transform duration-300 group-hover:translate-x-1"
                         fill="none"
@@ -128,82 +129,6 @@ const Competition = () => {
                                 group-hover:bg-emerald-200 group-hover:scale-110"
                   >
                     3
-                  </div>
-                  <div>
-                    <h4 className="font-semibold text-xl mb-2">
-                      Configure LLMs
-                    </h4>
-                    <p className="text-slate-600 mb-3">
-                      Set Up and Configure LLMs with Solace Agent Mesh (SAM).
-                    </p>
-                    <a
-                      href="<link TBD>"
-                      className="inline-flex items-center text-emerald-600 hover:text-emerald-700 font-medium group"
-                    >
-                      Configuring LLMs with Solace Agent Mesh
-                      <svg
-                        className="w-4 h-4 ml-2 transform transition-transform duration-300 group-hover:translate-x-1"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke="currentColor"
-                      >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth={2}
-                          d="M14 5l7 7m0 0l-7 7m7-7H3"
-                        />
-                      </svg>
-                    </a>
-                  </div>
-                </div>
-
-                {/* Step 4 */}
-                <div className="flex items-start gap-6 group">
-                  <div
-                    className="flex-shrink-0 w-10 h-10 rounded-full bg-emerald-100 flex items-center justify-center
-                                text-emerald-600 font-bold text-lg transition-all duration-300
-                                group-hover:bg-emerald-200 group-hover:scale-110"
-                  >
-                    4
-                  </div>
-                  <div>
-                    <h4 className="font-semibold text-xl mb-2">
-                      Get Set Up for Vibe Coding
-                    </h4>
-                    <p className="text-slate-600 mb-3">
-                      Set Up context7 and for Vibe Coding with Solace Agent Mesh.
-                    </p>
-                    <a
-                      href="<link TBD>"
-                      className="inline-flex items-center text-emerald-600 hover:text-emerald-700 font-medium group"
-                    >
-                      Set Up context7 for Vibe Coding
-                      <svg
-                        className="w-4 h-4 ml-2 transform transition-transform duration-300 group-hover:translate-x-1"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke="currentColor"
-                      >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth={2}
-                          d="M14 5l7 7m0 0l-7 7m7-7H3"
-                        />
-                      </svg>
-                    </a>
-                  </div>
-                </div>
-
-                {/* Step 5 */}
-                <div className="flex items-start gap-6 group">
-                  <div
-                    className="flex-shrink-0 w-10 h-10 rounded-full bg-emerald-100 flex items-center justify-center
-                                text-emerald-600 font-bold text-lg transition-all duration-300
-                                group-hover:bg-emerald-200 group-hover:scale-110"
-                  >
-                    5
                   </div>
                   <div>
                     <h4 className="font-semibold text-xl mb-2">
@@ -418,39 +343,12 @@ const Competition = () => {
               <div className="space-y-4">
                 <p>
                   If you have not signed up yet, please join our discord and register for the hackathon. Find a team (or fly solo),
-                  and ensure you provide the organizers with at least one team member's Discord ID.
+                  and ensure you provide the organizers with at least one team member's Discord ID. A Discord link is provided in the
+                  'Challenge Requirements' section above.
                 </p>
                 <p className="font-semibold">
                   Discord will be the primary form of communication, so even if a teammate has joined and signed up on behalf of the team,
                   we encourage all team members to join.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          {/* LiteLLM Keys - Full Width */}
-          <div
-            className="md:col-span-12 bg-white/80 backdrop-blur-sm rounded-xl shadow-lg p-6
-                        transform transition-all duration-300 hover:shadow-xl hover:-translate-y-1"
-          >
-            <h3 className="text-2xl font-bold text-slate-800 mb-4">
-              LLM Offerings
-            </h3>
-            <div className="space-y-4 text-slate-600">
-              <div className="space-y-4">
-                <p>
-                  <p className="font-semibold">Google Antigravity - Gemini 3 Pro (Recommended)</p>
-                  Antigravity is a Google-built IDE where you can use Gemini 3 Pro for coding tasks. To get access, 
-                  <a href="https://antigravity.google/" target="_blank" rel="noopener noreferrer" className="text-emerald-600 hover:text-emerald-700 hover:underline"> install Antigravity</a>
-                  , configure your settings, sign in with your Google account, open your repo, and select Gemini 3 Pro as the model
-                  (you'll have a limited free quota in preview, with higher limits if your account includes Google AI Pro). To get Google AI Pro for free for one month,
-                  <a href="https://gemini.google/students/" target="_blank" rel="noopener noreferrer" className="text-emerald-600 hover:text-emerald-700 hover:underline"> visit their site</a>,
-                  select "Start your trial", and upgrade your account. Don't forget to cancel the subscription before the month ends if you don't want to be charged.
-                </p>
-                <p> 
-                  <p className="font-semibold">Solace LiteLLM Keys</p>                 
-                  Solace is also offering free LiteLLM API keys to hackathon participants to help you get started with building your agentic AI solutions.
-                  These keys will only be valid during the hackathon period, and there are limited quantities available. 
                 </p>
               </div>
             </div>
