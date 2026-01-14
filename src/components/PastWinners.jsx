@@ -3,7 +3,7 @@ import React from "react";
 const PastWinners = () => {
   const winners = [
     {
-      title: "uOttaType (2025)",
+      title: "uOttaType",
       image: "assets/images/uottatype.png",
       description: "Leveraging Solace Event Broker for Real-Time Collaborative Document Editing",
       blogLink: "https://solace.com/blog/winning-uottahack-7/",
@@ -15,7 +15,7 @@ const PastWinners = () => {
       ],
     },
     {
-      title: "AmbuPlus (2021)",
+      title: "AmbuPlus",
       image: "assets/images/ambuplus.png",
       description: "Leveraging Solace PubSub+ for Real-Time Ambulance Tracking",
       blogLink:
@@ -28,7 +28,7 @@ const PastWinners = () => {
       ],
     },
     {
-      title: "The Box (2020)",
+      title: "The Box",
       image: "assets/images/smartbox3-225x300.png",
       description: "Leveraging Solace PubSub+ to Power a Smart Delivery System",
       blogLink: "https://solace.com/blog/uottahack3-smart-delivery-system/",

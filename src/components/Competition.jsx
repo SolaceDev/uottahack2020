@@ -58,7 +58,7 @@ const Competition = () => {
                       Discover Agent Mesh
                     </h4>
                     <p className="text-slate-600 mb-3">
-                      Learn About the Basics of Agent Mesh.
+                      Learn about the basics of Agent Mesh.
                     </p>
                     <a
                       href="https://solacelabs.github.io/solace-agent-mesh/docs/documentation/getting-started/introduction/"
