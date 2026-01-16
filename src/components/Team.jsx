@@ -4,7 +4,7 @@ const Team = () => {
   const teamMembers = [
     {
       name: "Ghaith Dalla-Ali",
-      role: "Director, Agentic AI",
+      role: "VP Engineering, Agentic AI",
       image: "/assets/images/GhaithDallaAli.jpeg",
       social: {
         //linkedin: "https://www.linkedin.com/in/ghaith-dalla-ali/",
